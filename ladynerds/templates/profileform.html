@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+<div id="left_border">
+	<img class="decoborder" id="profile_border" src="{% static 'images/decoborder.png' %}">
+</div>
+<div id="profile">
+		<div class="title" id="profile_title">We're so glad you're joining us. Tell us a little about yourself.</div>
+		<form action="/profile/" method="post">
+	<table id="profile_table" class="table_with_form">	
+			{% csrf_token %}
+		    	<thead><tr class="table_instructions" id="profile_submit_row"><td>Click here to enter your profile data</td><td><input id="profile_button" class="table_button" type="submit" value="enter profile" id="profilebutton"></td></tr>
+		
+		    	<tr><td>What should we call you?></td><td> {{form.user}}</td></tr>
+			    <tr><td class="table_instructions">Upload a profile pic.</td><td> {{form.picture}}</td></tr>
+			    <tr><td class="table_instructions">City you live in: </td><td class="profile_text_input">{{form.city}}</td></tr>
+			    <tr><td class="table_instructions">Year you graduated HB?</td><td class="profile_text_input">{{form.year_graduated}}</td></tr>
+			    <tr><td class="table_instructions">Season you graduated HB?</td><td class="profile_text_input">{{form.season_graduated}}</td></tr>
+			    <tr><td class="table_instructions">What's your email address?</td><td class="profile_text_input">{{form.email_address}}</td></tr>
+			    <tr><td class="table_instructions">What's your twitter handle?</td><td class="profile_text_input">{{form.twitter}}</td></tr>
+			    <tr><td class="table_instructions">What company do you work for?</td><td class="profile_text_input">{{form.company}</td></tr>
+			    <td class="table_instructions">What companies have you worked for?</td><td class="profile_text_input">{{form.past_companies}}</td></tr>
+			    <td class="table_instructions">What languages do you use?</td><td class="profile_text_input">{{form.languages}}</td></tr>
+			    <td class="table_instructions">What frameworks do you use?</td><td class="profile_text_input">{{form.frameworks}}</td></tr>
+			    <td class="table_instructions">Check here if you're currently job hunting.</td><td class="profile_text_input">{{form.looking_for_job}}</td></tr>
+			    <td class="table_instructions">What's your position at your company?</td><td class="profile_text_input">{{form.position}}</td></tr>
+			    <td class="table_instructions">If it isn't listed, write it here.</td><td class="profile_text_input">{{form.position_other}}</td></tr>
+
+
+	</table>
+			</form>
+</div> 
+
+{% endblock %}
