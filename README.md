@@ -8,7 +8,8 @@ This CRUD webapp is a collective project that will have the following features a
 - About and FAQ pages
 - Login /logout 
 - Slack integration 
-- Search capabilities 
+- Search capabilities for members by company, skill, location
+- Google Cal integration
 
 
 
