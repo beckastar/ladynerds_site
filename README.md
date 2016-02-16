@@ -6,6 +6,12 @@ This CRUD webapp is a collective project that will have the following features a
 
 - About and FAQ pages
 - Login /logout 
+- Display all users and skills 
+- Google Cal integration:   https://developers.google.com/google-apps/calendar/quickstart/python#prerequisites
+- Good UI
+
+
+Nice to haves:
 - Slack integration 
-- Search capabilities for members by company, skill, location
-- Google Cal integration
+- Twitter feed display 
+
