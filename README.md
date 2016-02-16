@@ -4,12 +4,8 @@ Ladynerds are an organization comprised of women who graduated from the Hackbrig
 
 This CRUD webapp is a collective project that will have the following features as part of the MVP:
 
-- Profile page
 - About and FAQ pages
 - Login /logout 
 - Slack integration 
 - Search capabilities for members by company, skill, location
 - Google Cal integration
-
-
-
