@@ -12,11 +12,6 @@ body {
 header {
     padding: 25px 0 35px;
     display: inline;
-    background-color: red;
-}
-
-li {
-	color: red;
 }
 
 /*Header*/
@@ -45,3 +40,670 @@ li {
     position: relative; 
     background-color: black;
     }
+
+#nav {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    position: absolute;  
+    color: black;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#nav li:hover a{
+    background-image: none;
+    color: pink;
+}
+
+#nav li:hover ul li {
+    width: 100%
+}
+
+/*colors the top letters in nav */
+#nav li a:hover {
+    color: purple;
+}
+ 
+#nav li {
+    width: 12.5%;
+}
+
+#nav li {
+    height: auto;
+    /*width: 10%;*/
+    float: left;
+    text-align: center;
+    list-style: none;
+    font: normal bold 18px/1em "Trebuchet MS", Helvetica, sans-serif;
+    /*color: gray;*/
+    padding: 0;
+    margin: 0;
+    background-color: #201F1F;
+}
+
+
+#nav li ul {
+    display: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-image: none;
+}
+
+#nav li:hover ul {
+    display: block;
+}
+
+#nav a {
+    padding: 18px 0;
+    text-decoration: none;
+    display: block;
+    color: #B1E6E9;
+}
+
+/*not used currently */
+.divider{
+    width:10px;
+    height:auto;
+    /*display:inline-block;*/
+}
+
+#main {
+    height: 70%;
+    /*background: #EC38F2;*/
+    padding-top-top: 50px solid #235B8C;
+
+}
+
+#logo {
+    height: 20%;
+    width: 20%;
+}
+
+#zeroninebio {
+    font-size: 35px;
+}
+
+#profile {
+    position: relative;
+}
+
+#container {
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+    left: 44%;
+}
+
+.biotire {
+    width: 65px;
+    height: 65px;
+    position: relative;
+    top: 2.5em;
+    z-index: 5;
+    opacity: 2.3;
+}
+
+#leftbiotire {
+    left: 1%;
+}
+
+#rightbiotire {
+    left: 90%;
+}
+
+.pulse {
+  width: 80px;
+  height: 80px;
+  border: 3px solid #E01DB6;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  background-color: #955079;
+  z-index: 4;
+  position: absolute;
+}
+
+.dot {
+  border: 15px solid #E01DB6;
+  background: transparent;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 70px;
+  height: 77px;
+  width: 77px;
+  box-shadow: inset 0 0 1em #E01DB6, 0 0 1em #E01DB6;
+  -webkit-animation: pulse 2s ease-out;
+  -moz-animation: pulse 2s ease-out;
+  animation: pulse 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: -11px;
+  left: -10px;
+  z-index: 1;
+  opacity: 0;
+}
+
+@-moz-keyframes pulse {
+ 0% {
+
+    opacity: 0.0;
+ }
+ 20% {
+
+    opacity: 0.1;
+ }
+ 40% {
+
+    opacity: 0.3;
+ }
+ 60% {
+
+    opacity: 0.5;
+ }
+ 80% {
+    opacity: 0.7;
+ }
+ 90% {
+    opacity: 0.3;
+ }
+ 100% {
+
+    opacity: 0.0;
+ }
+}
+@-webkit-keyframes "pulse" {
+ 0% {
+
+    opacity: 0.0;
+ }
+ 20% {
+
+    opacity: 0.1;
+ }
+ 40% {
+
+    opacity: 0.3;
+ }
+ 60% {
+
+    opacity: 0.5;
+ }
+ 80% {
+    opacity: 0.7;
+ }
+ 90% {
+    opacity: 0.3;
+ }
+ 100% {
+
+    opacity: 0.0;
+ }
+}
+
+#biotext {
+    position: relative;
+    left: 34%;
+    font-family: Josefin Sans, sans-serif;
+    font-size: 35px;
+    color: rgba(255,255,255,1);
+    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de;
+}
+
+#headertext {
+    position: relative;
+    left: 33.7%;
+    font-family: Warnes, cursive;
+    font-size: 15px;
+    color: rgba(255,255,255,1);
+    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+@-webkit-keyframes neon { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes neon { from { opacity:0; } to { opacity:1; } }
+@keyframes neon { from { opacity:0; } to { opacity:1; } }
+
+.neon {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:neon ease-in 1;  /* call our keyframe named neon, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:neon ease-in 1;
+    animation:neon ease-in 1;
+ 
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+ 
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+
+.word1 {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.word2 {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.word3 {
+    -webkit-animation-delay: .6s;
+    -moz-animation-delay: .6s;
+    animation-delay: .6s;
+}
+
+.word4 {
+    -webkit-animation-delay: .4s;
+    -moz-animation-delay: .8s;
+    animation-delay: .8s;
+}
+
+.word5 {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.word6 {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.word7 {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.word8 {
+    -webkit-animation-delay: 1.4s;
+    -moz-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+
+.decoborder {
+    opacity: .6;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#profile_border {
+    position: relative;
+    width: 78%;
+    top: 49em;
+    height: 15%;
+    left: -31%;
+}
+
+#vehicle_border {
+    width: 28%;
+    top: 13em;
+    height: 3em;
+    left: -6%;
+}
+
+#sleeping_border {
+    width: 28%;
+    top: 13em;
+    height: 3em;
+    left: -6%;
+}
+
+#landingtext {
+    position: relative;
+    left: 7%;
+    top: 10%;
+    width: 80%;
+    height: 90%;
+    border: 3px solid #C7C7C7; 
+    border-radius: 5px;
+    padding-left: 4%;
+    padding-top: 1%;
+}
+
+/*tables for both bikes and meal signups */
+/*#table_form {
+    background-color: #B1E6E9;
+}*/
+
+#datatables {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+table {
+    border-spacing: 0px;
+}
+
+/*for tables with thead*/
+/*thead th:first-child {
+    border-radius: 10px 0px 0px 0px;
+}
+
+thead th:last-child {
+    border-radius: 0px 10px 10px 0px;
+}
+*/
+table { 
+    border-collapse: collapse;
+}
+
+table th {
+    padding: 2px;
+    background: rgb(237, 210, 229);  
+}
+
+table td {
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    /*background: #ebecda;*/
+    background: #276693;
+    /*background: rgb(191, 179, 191); /*this is the table body */*/
+}
+
+.showTable {
+    visibility: visible;
+}
+
+.hideTable {
+    display:none;
+    visibility: hidden;
+}
+
+#allShifts {
+  display:none;  
+}
+
+.hiddentext {
+    visibility: hidden;
+}
+
+.textbody {
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%
+    margin-right: 8%;
+    font-size: 23px;
+}
+
+.table_instructions {
+    font-family: verdana;
+    font-size: 15px;
+    color: #FBEFFF;
+    position: relative;
+    /* top: -0.9em; */
+    padding-top: 19px;
+}
+
+td input {
+   border-radius: 7px;
+}
+
+table td {
+    height: 3em;
+    border-bottom: 8px solid #FBEFFF;
+    text-align: left;
+    vertical-align: top;
+}
+
+.table_with_form {
+    width: 66%;
+    position: relative;
+    left: 18%;
+    z-index: 2;
+    padding-bottom: 4%;
+    margin-bottom: 4%;
+    border-collapse: collapse;
+    color: #FBEFFF
+}
+
+.table_with_form tr td:first-child{
+    border-radius: 15px 0px 0px 15px;
+}
+
+.table_with_form tr td:nth-child(2){
+    border-radius: 0px 15px 15px 0px;
+}
+
+.table_button {
+    top: 0.5em;
+    left: 0%;
+    position: relative;
+    /*width: 8em;*/
+    height: 2.5em;
+    border-radius: 5px;
+    margin: 4px;
+    border: 5px solid black;
+    background-color: #450E45;
+    color: #B1E6E9;
+}
+
+#profile_button .table_button{
+    width: 8em;
+}
+
+input #vehicle_button .table_button {
+    width: 11em;
+}
+
+.table_submit_button {
+    width: 15em;
+    height: 2.5em;
+    background-color: #450E45;
+    color: #B1E6E9;
+}
+
+.table_title {
+    position: relative;
+    left: 3%;
+}
+
+.help_text_wrap{
+    position: relative;
+}
+
+/*.table_instructions {
+    position: fixed;
+    z-index: 10;
+    width: 6em;
+    left: 15%;
+    bottom: 51%;
+    font-size: 25px;
+    width: 34%;
+    height: 46%;
+    border: 2px solid purple;
+    border-radius: 5px;
+    z-index: 3;
+    top: 29%;
+    background-color: rgb(237, 210, 229);
+}*/
+
+.instruction_image {
+    width: 4em;
+    height: 4em;
+    position: relative;
+    background-position: 2px 4px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('../images/question_mark.png');
+}
+
+.hidden {
+    display: none;
+}
+
+.shown{
+    visibility: visible;
+}
+
+#truck_heading {
+    position: relative;
+    left: 10%;
+}
+
+.message_container {
+    position: relative;
+    left: 20%;
+    border-radius: 25px;
+    z-index: 5;
+    width: 30%;
+    height: 20%;
+    background-color: #92438D;
+    opacity: .7;
+    display: none;
+}
+
+.confirmation_message {
+    position: relative;
+    left: 20%;
+    width: 80%;
+    height: 90%;
+    font-size: 12px; 
+}
+s
+.calendar_container {
+    position: relative;
+    left: 10%;
+    top: 10%;
+}
+
+#calendar_table tr td.weekdaycell {
+    border: 5px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+#first_time {
+    position: relative;
+    width: 80%;
+    font: normal bold 18px/1.2em Arial, Verdana, Helvetica;  
+}
+
+#bikeform {
+    position: relative;
+    width: 85%;
+}
+
+#campers {
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+}
+
+.toggleview { 
+    position: relative;
+    width: 6em;
+    height: 1.5em;
+    border-radius: 5px;
+    margin: 4px;
+    border: 5px solid black;
+    background-color: #450E45;
+    color: #B1E6E9;
+    top: 10%;
+}
+
+.profile_pic {
+    width: 20px;
+    height: auto;
+}
+
+.title {
+    font-family: Verdana;
+    font-style: bold;
+    position: relative;
+    padding-top: 1.5%;
+    padding-bottom: 2%;
+}
+
+#profile_title {
+    font-size: 1.3em;
+    left: 29%;
+}
+
+#vehicle_title {
+    font-size: 1.3em;
+    left: 36%;
+}
+
+#sleeping_title {
+    font-size: 1.3em;
+    left: 36%;
+}
+ 
+#food_restrictions li {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#campertoggle { 
+}
+
+.profile_text_input input {
+    position: relative;
+    top: 35%;
+    width: 65%;
+    height: 40%;
+}
+
+.squaredTwo #id_camping_this_year, .squaredTwo #id_has_ticket, .squaredTwo #id_looking_for_ticket, .squaredTwo #id_primary_driver_in_your_party {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  margin: 20px auto;
+  background: #fcfff4;
+  background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+  label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    background: linear-gradient(top, #222 0%, #45484d 100%);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+    &:after {
+      content: '';
+      width: 9px;
+      height: 5px;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      border: 3px solid #fcfff4;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+    &:hover::after {
+      opacity: 0.3;
+    }
+  }
+  input[type=checkbox] {
+    visibility: hidden;
+    &:checked + label:after {
+      opacity: 1;
+    }    
+  }
+} 

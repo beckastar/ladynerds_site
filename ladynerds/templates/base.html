@@ -11,8 +11,8 @@
     <header>
         <div class="headercontainer"> 
             <span id="header">Header</span>
-            <div id="container"> 
-            </div>
+            <div id="container"> </div>
+            <ul id="nav">
             {% if user.is_authenticated %}
                 <li><a href="">Logout</a></li>
                 <li><a href="">Edit Your Profile</a>
@@ -21,9 +21,7 @@
                 <li><a href="">LN Calendar</a></li>
                 <li><a href="#">Slack</a>
                 </li>
-                </li>
-                <li><a href="#">Operations</a>
-                </li>               
+                </li>          
             {% endif %}
               <li><a href="/login/">Login</a></li> 
               <li><a href={% url 'about' %}>About Ladynerds</a>
