@@ -15,3 +15,6 @@ Nice to haves:
 - Slack integration 
 - Twitter feed display 
 
+Currently has:
+- Login 
+- Profile page
