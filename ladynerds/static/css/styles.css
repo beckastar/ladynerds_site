@@ -171,14 +171,14 @@ table {
 }
 
 /*for tables with thead*/
-/*thead th:first-child {
+thead th:first-child {
     border-radius: 10px 0px 0px 0px;
 }
 
 thead th:last-child {
     border-radius: 0px 10px 10px 0px;
 }
-*/
+
 table { 
     border-collapse: collapse;
 }
@@ -237,7 +237,7 @@ td input {
 
 table td {
     height: 3em;
-    border-bottom: 8px solid #FBEFFF;
+    border-bottom: 8px solid white;
     text-align: left;
     vertical-align: top;
 }
