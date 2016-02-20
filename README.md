@@ -11,6 +11,11 @@ This CRUD webapp is a collective project that will have the following features a
 - Good UI
 
 
+We've chosen to use the old terminal color scheme of green on a black background.  
+
+The green color hex value: #00ff00
+The terminal font is in google fonts: https://www.google.com/fonts/specimen/VT323
+
 Nice to haves:
 - Slack integration 
 - Twitter feed display 
