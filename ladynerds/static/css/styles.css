@@ -6,7 +6,7 @@ html, body, .container {
 }
 
 body {
-    background-color: #FBEFFF;
+    background-color: white;
     /*old: #86AAAC;*/
 }
 header {
@@ -46,7 +46,8 @@ header {
     height: 50px;
     padding: 0;
     margin: 0;
-    position: absolute;  
+    top: 15%;
+    position: absolute;
     color: black;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -73,12 +74,13 @@ header {
 
 #nav li {
     height: auto;
-    /*width: 10%;*/
+    /* width: 10%; */
     float: left;
     text-align: center;
     list-style: none;
-    font: normal bold 18px/1em "Trebuchet MS", Helvetica, sans-serif;
-    /*color: gray;*/
+    font-family: 'VT323';
+    font-size: 1.5em;
+    /* color: gray; */
     padding: 0;
     margin: 0;
     background-color: #201F1F;
@@ -98,10 +100,11 @@ header {
 }
 
 #nav a {
-    padding: 18px 0;
+    padding: 12px 0;
     text-decoration: none;
     display: block;
-    color: #B1E6E9;
+    color: #00ff00;
+    font-family: 'VT323';
 }
 
 /*not used currently */
@@ -118,230 +121,6 @@ header {
 
 }
 
-#logo {
-    height: 20%;
-    width: 20%;
-}
-
-#zeroninebio {
-    font-size: 35px;
-}
-
-#profile {
-    position: relative;
-}
-
-#container {
-    margin-top: 20px;
-    margin-left: 20px;
-    position: relative;
-    left: 44%;
-}
-
-.biotire {
-    width: 65px;
-    height: 65px;
-    position: relative;
-    top: 2.5em;
-    z-index: 5;
-    opacity: 2.3;
-}
-
-#leftbiotire {
-    left: 1%;
-}
-
-#rightbiotire {
-    left: 90%;
-}
-
-.pulse {
-  width: 80px;
-  height: 80px;
-  border: 3px solid #E01DB6;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  background-color: #955079;
-  z-index: 4;
-  position: absolute;
-}
-
-.dot {
-  border: 15px solid #E01DB6;
-  background: transparent;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 70px;
-  height: 77px;
-  width: 77px;
-  box-shadow: inset 0 0 1em #E01DB6, 0 0 1em #E01DB6;
-  -webkit-animation: pulse 2s ease-out;
-  -moz-animation: pulse 2s ease-out;
-  animation: pulse 2s ease-out;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  position: absolute;
-  top: -11px;
-  left: -10px;
-  z-index: 1;
-  opacity: 0;
-}
-
-@-moz-keyframes pulse {
- 0% {
-
-    opacity: 0.0;
- }
- 20% {
-
-    opacity: 0.1;
- }
- 40% {
-
-    opacity: 0.3;
- }
- 60% {
-
-    opacity: 0.5;
- }
- 80% {
-    opacity: 0.7;
- }
- 90% {
-    opacity: 0.3;
- }
- 100% {
-
-    opacity: 0.0;
- }
-}
-@-webkit-keyframes "pulse" {
- 0% {
-
-    opacity: 0.0;
- }
- 20% {
-
-    opacity: 0.1;
- }
- 40% {
-
-    opacity: 0.3;
- }
- 60% {
-
-    opacity: 0.5;
- }
- 80% {
-    opacity: 0.7;
- }
- 90% {
-    opacity: 0.3;
- }
- 100% {
-
-    opacity: 0.0;
- }
-}
-
-#biotext {
-    position: relative;
-    left: 34%;
-    font-family: Josefin Sans, sans-serif;
-    font-size: 35px;
-    color: rgba(255,255,255,1);
-    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de;
-}
-
-#headertext {
-    position: relative;
-    left: 33.7%;
-    font-family: Warnes, cursive;
-    font-size: 15px;
-    color: rgba(255,255,255,1);
-    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de;
-    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-}
-
-@-webkit-keyframes neon { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes neon { from { opacity:0; } to { opacity:1; } }
-@keyframes neon { from { opacity:0; } to { opacity:1; } }
-
-.neon {
-    opacity:0;  /* make things invisible upon start */
-    -webkit-animation:neon ease-in 1;  /* call our keyframe named neon, use animattion ease-in and repeat it only 1 time */
-    -moz-animation:neon ease-in 1;
-    animation:neon ease-in 1;
- 
-    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-    -moz-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
- 
-    -webkit-animation-duration:1s;
-    -moz-animation-duration:1s;
-    animation-duration:1s;
-}
-
-
-.word1 {
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.4s;
-    animation-delay: 0.4s;
-}
-
-.word2 {
-    -webkit-animation-delay: 0.4s;
-    -moz-animation-delay: 0.4s;
-    animation-delay: 0.4s;
-}
-
-.word3 {
-    -webkit-animation-delay: .6s;
-    -moz-animation-delay: .6s;
-    animation-delay: .6s;
-}
-
-.word4 {
-    -webkit-animation-delay: .4s;
-    -moz-animation-delay: .8s;
-    animation-delay: .8s;
-}
-
-.word5 {
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    animation-delay: 1s;
-}
-
-.word6 {
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    animation-delay: 1s;
-}
-
-.word7 {
-    -webkit-animation-delay: 1.2s;
-    -moz-animation-delay: 1.2s;
-    animation-delay: 1.2s;
-}
-
-.word8 {
-    -webkit-animation-delay: 1.4s;
-    -moz-animation-delay: 1.4s;
-    animation-delay: 1.4s;
-}
-
-.decoborder {
-    opacity: .6;
-    -ms-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
 
 #profile_border {
     position: relative;
@@ -534,6 +313,40 @@ input #vehicle_button .table_button {
     top: 29%;
     background-color: rgb(237, 210, 229);
 }*/
+
+#logintable {
+    position: relative;
+    left: 6%;
+    top: 75px;
+}
+
+.styled-button {
+    position: relative;
+    -webkit-box-shadow: rgba(0,0,0,0.2) 0 1px 0 0;
+    -moz-box-shadow: rgba(0,0,0,0.2) 0 1px 0 0;
+    box-shadow: rgba(0,0,0,0.2) 0 1px 0 0;
+    border-bottom-color: #333;
+    border: 1px solid #0E0E0E;
+    background-color: #141415;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #00ff00;
+    font-family: 'Verdana',Arial,sans-serif;
+    font-size: 14px;
+    text-shadow: #161617 0 1px 0;
+    padding: 5px;
+    top: 6em;
+    left: 21%;
+}
+
+table tr td {
+    background-color: black;
+}
+
+tr td label {
+    color: #00ff00;
+}
 
 .instruction_image {
     width: 4em;

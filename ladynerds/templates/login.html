@@ -8,7 +8,7 @@
 
     <form method="post" action="{% url 'django.contrib.auth.views.login' %}">
         {% csrf_token %}
-        <table>
+        <table id="logintable">
             <tr>
                 <td>{{ form.username.label_tag }}</td>
                 <td>{{ form.username }}</td>
@@ -19,7 +19,7 @@
             </tr>
        </table>
 
-       <input type="submit" value="login" />
+       <input type="submit" class="styled-button" value="login" />
        <!-- <input type="hidden" name="next" value="{{ next }}" /> -->
    </form>
 
