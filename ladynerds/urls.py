@@ -27,5 +27,6 @@ urlpatterns = [
     url(r'^login/', 'django.contrib.auth.views.login', name='foo',kwargs={'template_name': 'login.html'}),
     url(r'^logout/', 'django.contrib.auth.views.logout', name='logout', kwargs={'next_page': about}),
     url(r'^ladynerds/', ladynerds, name='ladynerds'),
-    url(r'^profile/', profile, name='profile')
+    url(r'^profile/', profile, name='profile'),
+    url(r'^resources/', resources, name='resources')
 ]
