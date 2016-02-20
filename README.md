@@ -22,3 +22,39 @@ Currently has:
 - About page url 
 - Profile page
 - working navbar 
+
+## How to Contribute:
+
+Fork the repo (there's a button in the upper right part of your screen)
+- This makes a copy of the repo on your github
+- It makes it so you can push up changes without needing to be an official/listed contributor
+
+Clone repo:
+```sh
+$ git clone https://github.com/[your-username-here]/ladynerds_site.git ladynerds_site
+$ cd ladynerds_site
+```
+
+We're currently working off of the 'static' branch, so check that out:
+```sh
+$ git checkout static
+```
+
+If that doesn't work (because you only have a master branch, locally), try:
+```sh
+$ git checkout --track origin/static
+```
+Acvtivate a virtual environment and install dependencies:
+```sh
+$ virtualenv env
+$ source env/bin/activate
+$ pip install -r requirements.txt
+```
+
+
+And have fun! 
+- Check out the 'issues' for features that we'd like to work on, or are already working on.
+- If you do some work, submit a pull request and be sure to comment with whatever work you've done. This will make it easier for other folks to help without duplicating code
+    - If you keep working, keep pushing! The pull request will keep updated.
+- If you're a contributor, please get a code review before accepting your own pull requests :)
+
