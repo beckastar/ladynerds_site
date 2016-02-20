@@ -707,3 +707,10 @@ s
     }    
   }
 } 
+
+/*Block Content Styles*/
+.block-content {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #eee;
+    padding: 5%;
+}
