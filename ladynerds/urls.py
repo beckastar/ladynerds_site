@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from .views import about, index, login, ladynerds, profile
+from .views import about, index, login, ladynerds, profile, resources
 from django.views.generic import TemplateView
 from django.views.generic.edit import CreateView
 from django.contrib.auth.forms import UserCreationForm
