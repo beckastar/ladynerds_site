@@ -75,12 +75,15 @@ Keep in mind that if there are changes to both static and master, you will need 
 
 ## General Stuff to keep in mind:
 
-Have fun! 
 - Check out the 'issues' for features that we'd like to work on, or are already working on.
-- If you do some work, submit a pull request and be sure to comment with whatever work you've done. This will make it easier for other folks to help without duplicating code
+    - IMPORTANT: Before you start working on your local repo, make a local branch for the issue
+    you are working on.  Do all of your work for that issue on that branch.  This will make pull
+    requests less confusing for everyone later on.
+- If you do some work, submit a pull request and be sure to comment with whatever work you've done. 
+This will make it easier for other folks to help without duplicating code.
     - If you keep working, keep pushing! The pull request will keep updated.
+    - Make sure your pull request is comparing your local issue branch to the the original 
+    repos 'static' branch.
 - If you're a contributor, please get a code review before accepting your own pull requests :)
 
-- If you do some work, submit a pull request and be sure to comment with whatever work you've done. This will make it easier for other folks to help without duplicating code.
-      - If you keep working, keep pushing! The pull request will keep updated.
-        - If you're a contributor, please get a code review before accepting your own pull requests :)
+Have fun!
