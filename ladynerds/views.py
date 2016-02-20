@@ -46,6 +46,7 @@ def profile(request):
             print(messages.error(request, "Error"))
     return render(request, "profileform.html", RequestContext(request, {'form': form, 'profile': profile,}))
 
+@login_required
 def ladynerds(request):
     ladynerds = UserProfile.objects.all()
     context_dict = {'ladynerds':ladynerds}
