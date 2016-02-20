@@ -55,9 +55,9 @@ $ pip install -r requirements.txt
 Before you can sync any changes with the orginal repo, [configure your remote]
 (https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 
-[Get changes from the original repo] 
+[Get changes from the original repo](https://help.github.com/articles/syncing-a-fork/)
+
 *substitute "static" for "master" if updates are in that branch
-(https://help.github.com/articles/syncing-a-fork/)
 
 And have fun! 
 - Check out the 'issues' for features that we'd like to work on, or are already working on.
