@@ -39,20 +39,20 @@ We're currently working off of the 'static' branch, so check that out:
 ```sh
 $ git checkout static
 ```
-* (changes to this README should be done in master)
 
 If that doesn't work (because you only have a master branch, locally), try:
 ```sh
 $ git checkout --track origin/static
 ```
+
+## How to Run the site locally:
+
 Acvtivate a virtual environment and install dependencies:
 ```sh
 $ virtualenv env
 $ source env/bin/activate
 $ pip install -r requirements.txt
 ```
-
-## How to Run the site locally:
 
 After you've installed Django:
 
@@ -63,12 +63,12 @@ And now you can view the site locally at http://localhost:8000/
 
 ## How to keep your repos in sync :
 
-Before you can make a pull request any changes with the orginal repo, [configure your remote]
-(https://help.github.com/articles/configuring-a-remote-for-a-fork/)
+Before you can make a pull request, pull and merge any updates from the orginal repo:
+* First, [configure your remote](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
+* Next, [Get changes from the original repo](https://help.github.com/articles/syncing-a-fork/)
+** (substitute "static" for "master" if your updates are in that branch)
+** (changes to this README should be done in master)
 
-[Get changes from the original repo](https://help.github.com/articles/syncing-a-fork/)
-
-*substitute "static" for "master" if updates are in that branch
 
 ## General Stuff to keep in mind:
 
