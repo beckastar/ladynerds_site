@@ -52,20 +52,27 @@ $ source env/bin/activate
 $ pip install -r requirements.txt
 ```
 
+## How to Run the site locally:
+
 After you've installed Django:
 
 $ python manage.py runserver
 
 And now you can view the site locally at http://localhost:8000/
 
-Before you can sync any changes with the orginal repo, [configure your remote]
+
+## How to keep your repos in sync :
+
+Before you can make a pull request any changes with the orginal repo, [configure your remote]
 (https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 
 [Get changes from the original repo](https://help.github.com/articles/syncing-a-fork/)
 
 *substitute "static" for "master" if updates are in that branch
 
-And have fun! 
+## General Stuff to keep in mind:
+
+Have fun! 
 - Check out the 'issues' for features that we'd like to work on, or are already working on.
 - If you do some work, submit a pull request and be sure to comment with whatever work you've done. This will make it easier for other folks to help without duplicating code
     - If you keep working, keep pushing! The pull request will keep updated.
