@@ -39,12 +39,14 @@ We're currently working off of the 'static' branch, so check that out:
 ```sh
 $ git checkout static
 ```
-* (changes to this README should be done in master)
 
 If that doesn't work (because you only have a master branch, locally), try:
 ```sh
 $ git checkout --track origin/static
 ```
+
+## How to Run the site locally:
+
 Acvtivate a virtual environment and install dependencies:
 ```sh
 $ virtualenv env
@@ -58,14 +60,22 @@ $ python manage.py runserver
 
 And now you can view the site locally at http://localhost:8000/
 
-Before you can sync any changes with the orginal repo, [configure your remote]
-(https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 
-[Get changes from the original repo](https://help.github.com/articles/syncing-a-fork/)
+## How to keep your repos in sync :
 
-*substitute "static" for "master" if updates are in that branch
+Before you can make a pull request, pull and merge any updates from the orginal repo:
+* First, [configure your remote](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
+* Next, [Get changes from the original repo](https://help.github.com/articles/syncing-a-fork/)
+	* (substitute "static" for "master" if your updates are in that branch)
+	* (changes to this README should be done in master)
+* Finally, [update YOUR github repo with your sync'ed and merged local changes](https://help.github.com/articles/pushing-to-a-remote/)
+* Now you can submit a pull request!
 
-And have fun! 
+Keep in mind that if there are changes to both static and master, you will need to go through the fetch, merge, and push steps of this process in both branches
+
+## General Stuff to keep in mind:
+
+Have fun! 
 - Check out the 'issues' for features that we'd like to work on, or are already working on.
 - If you do some work, submit a pull request and be sure to comment with whatever work you've done. This will make it easier for other folks to help without duplicating code
     - If you keep working, keep pushing! The pull request will keep updated.
