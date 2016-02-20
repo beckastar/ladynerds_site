@@ -66,8 +66,8 @@ And now you can view the site locally at http://localhost:8000/
 Before you can make a pull request, pull and merge any updates from the orginal repo:
 * First, [configure your remote](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 * Next, [Get changes from the original repo](https://help.github.com/articles/syncing-a-fork/)
-** (substitute "static" for "master" if your updates are in that branch)
-** (changes to this README should be done in master)
+	* (substitute "static" for "master" if your updates are in that branch)
+	* (changes to this README should be done in master)
 
 
 ## General Stuff to keep in mind:
