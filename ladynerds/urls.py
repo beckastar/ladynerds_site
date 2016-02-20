@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from .views import about, index, login, ladynerds
+from .views import about, index, login, ladynerds, profile
 from django.views.generic import TemplateView
 from django.views.generic.edit import CreateView
 from django.contrib.auth.forms import UserCreationForm
@@ -25,5 +25,7 @@ urlpatterns = [
     url(r'^$', index, name='index'),
     url(r'^about/', about, name='about'),
     url(r'^login/', 'django.contrib.auth.views.login', name='foo',kwargs={'template_name': 'login.html'}),
-    url(r'^ladynerds/', ladynerds, name='ladynerds')
+    url(r'^logout/', 'django.contrib.auth.views.logout', name='logout', kwargs={'next_page': about}),
+    url(r'^ladynerds/', ladynerds, name='ladynerds'),
+    url(r'^profile/', profile, name='profile')
 ]
