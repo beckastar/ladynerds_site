@@ -16,11 +16,9 @@ The terminal font is in google fonts: https://www.google.com/fonts/specimen/VT32
 
 Nice to haves:
 - Slack integration 
-- Twitter feed display 
 
 Currently has:
 - Login /logout 
 - About page url 
 - Profile page
 - working navbar 
-- 
