@@ -4,8 +4,6 @@ Ladynerds are an organization comprised of women who graduated from the Hackbrig
 
 This CRUD webapp is a collective project that will have the following features as part of the MVP:
 
-- About and FAQ pages
-- Login /logout 
 - Display all users and skills 
 - Google Cal integration:   https://developers.google.com/google-apps/calendar/quickstart/python#prerequisites
 - Good UI
@@ -21,5 +19,8 @@ Nice to haves:
 - Twitter feed display 
 
 Currently has:
-- Login 
+- Login /logout 
+- About page url 
 - Profile page
+- working navbar 
+- 
