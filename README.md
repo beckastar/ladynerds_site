@@ -52,10 +52,11 @@ $ source env/bin/activate
 $ pip install -r requirements.txt
 ```
 
-Before you can sync any changes with the orginal repo, [Configure your remote]
+Before you can sync any changes with the orginal repo, [configure your remote]
 (https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 
-[Get changes from the original repo (but substitute "static" for "master")]
+[Get changes from the original repo] 
+*substitute "static" for "master" if updates are in that branch
 (https://help.github.com/articles/syncing-a-fork/)
 
 And have fun! 
