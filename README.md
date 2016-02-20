@@ -50,11 +50,16 @@ $ virtualenv env
 $ source env/bin/activate
 $ pip install -r requirements.txt
 ```
+After you've installed Django:
+```sh
+$ python manage.py runserver
+```
+And now you can view the site locally at http://localhost:8000/
 
-
-And have fun! 
+Have fun! 
+- Ask questions! Our Slack channel is a great spot for that. 
 - Check out the 'issues' for features that we'd like to work on, or are already working on.
-- If you do some work, submit a pull request and be sure to comment with whatever work you've done. This will make it easier for other folks to help without duplicating code
+- If you do some work, submit a pull request and be sure to comment with whatever work you've done. This will make it easier for other folks to help without duplicating code.
     - If you keep working, keep pushing! The pull request will keep updated.
 - If you're a contributor, please get a code review before accepting your own pull requests :)
 
