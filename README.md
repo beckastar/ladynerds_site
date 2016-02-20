@@ -68,7 +68,10 @@ Before you can make a pull request, pull and merge any updates from the orginal 
 * Next, [Get changes from the original repo](https://help.github.com/articles/syncing-a-fork/)
 	* (substitute "static" for "master" if your updates are in that branch)
 	* (changes to this README should be done in master)
+* Finally, [update YOUR github repo with your sync'ed and merged local changes](https://help.github.com/articles/pushing-to-a-remote/)
+* Now you can submit a pull request!
 
+Keep in mind that if there are changes to both static and master, you will need to go through the fetch, merge, and push steps of this process in both branches
 
 ## General Stuff to keep in mind:
 
