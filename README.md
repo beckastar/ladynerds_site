@@ -52,6 +52,12 @@ $ source env/bin/activate
 $ pip install -r requirements.txt
 ```
 
+After you've installed Django:
+
+$ python manage.py runserver
+
+And now you can view the site locally at http://localhost:8000/
+
 Before you can sync any changes with the orginal repo, [configure your remote]
 (https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 
@@ -65,3 +71,6 @@ And have fun!
     - If you keep working, keep pushing! The pull request will keep updated.
 - If you're a contributor, please get a code review before accepting your own pull requests :)
 
+- If you do some work, submit a pull request and be sure to comment with whatever work you've done. This will make it easier for other folks to help without duplicating code.
+      - If you keep working, keep pushing! The pull request will keep updated.
+        - If you're a contributor, please get a code review before accepting your own pull requests :)
