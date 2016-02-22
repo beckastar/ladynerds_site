@@ -1,18 +1,19 @@
 # ladynerds_site
 
-Ladynerds are an organization comprised of women who graduated from the Hackbright Academy coding bootcamp.  There are roughly 300 of us working in a variety of roles within the tech industry, primarily in San Francisco, but in other locations as well. 
+Ladynerds are an organization comprised of people who graduated from the Hackbright Academy coding bootcamp.  There are roughly 300 of us working in a variety of roles within the tech industry, primarily in San Francisco, but in other locations as well. 
 
 This CRUD webapp is a collective project that will have the following features as part of the MVP:
 
-- Display all users and skills 
+- Put all of our info that is currently in Google Docs in one central place 
 - Google Cal integration:   https://developers.google.com/google-apps/calendar/quickstart/python#prerequisites
 - Good UI
-
+- Eliminate the need for google docs by
 
 We've chosen to use the old terminal color scheme of green on a black background.  
 
 The green color hex value: #00ff00
-The terminal font is in google fonts: https://www.google.com/fonts/specimen/VT323
+
+The terminal font which we're using for the logo and navbar is in google fonts: https://www.google.com/fonts/specimen/VT323
 
 Nice to haves:
 - Slack integration 
@@ -20,10 +21,13 @@ Nice to haves:
 Currently has:
 - Login /logout 
 - About page url 
-- Profile page
+- Profile form  
 - working navbar 
+- Resources page
 
 ## How to Contribute:
+
+Install Django with pip, and activate your virtual environment.  The Django official tutorial is a great way to learn Django, but for this simple webapp, is probably not necessary for contributing. 
 
 Fork the repo (there's a button in the upper right part of your screen)
 - This makes a copy of the repo on your github
@@ -84,6 +88,7 @@ This will make it easier for other folks to help without duplicating code.
     - If you keep working, keep pushing! The pull request will keep updated.
     - Make sure your pull request is comparing your local issue branch to the the original 
     repos 'static' branch.
+- If you're a contributor, please track the feature you're working on.  Ask Becka for access to the Spreadsheet in Google Docs that tracks all the issues. 
 - If you're a contributor, please get a code review before accepting your own pull requests :)
 
 Have fun!
