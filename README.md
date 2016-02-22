@@ -29,6 +29,8 @@ Currently has:
 
 Install Django with pip, and activate your virtual environment.  The Django official tutorial is a great way to learn Django, but for this simple webapp, is probably not necessary for contributing. 
 
+You can either message Becka to be added as a contributor, or you can take the following steps:
+
 Fork the repo (there's a button in the upper right part of your screen)
 - This makes a copy of the repo on your github
 - It makes it so you can push up changes without needing to be an official/listed contributor
