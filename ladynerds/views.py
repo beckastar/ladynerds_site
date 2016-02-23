@@ -52,3 +52,6 @@ def ladynerds(request):
     context_dict = {'ladynerds':ladynerds}
     return render_to_response('ladynerds.html', RequestContext(request, context_dict))
 
+@login_required
+def resources(request):
+    return render_to_response('resources.html', RequestContext(request))

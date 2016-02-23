@@ -14,17 +14,19 @@
             <span id="header">Header</span>
             <div id="container"> </div>
             <ul id="nav">
+            {% if not user.is_authenticated %}
                 <li><a href={% url 'django.contrib.auth.views.login' %}>Login</a></li>
+            {% endif %}
             {% if user.is_authenticated %}
                 <li><a href={% url 'logout' %}>Logout</a></li>
                 <li><a href={% url 'profile' %}>Edit Your Profile</a></li>
                 <li><a href="">Ladynerds</a></li>
                 <li><a href="">LN TwitterFeed</a></li>
                 <li><a href="#">Slack</a></li>
-                </li>          
+                <li><a href={% url 'resources' %}>Resources</a></li>
             {% endif %}
-              <li><a href={% url 'about' %}>About Ladynerds</a>
-              <li><a href="#">Resources</a>
+                <li><a href="#">Code of Conduct</a></li>
+                <li><a href={% url 'about' %}>About Ladynerds</a></li>
             </ul>
           </div>
         </div>
