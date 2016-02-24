@@ -61,3 +61,7 @@ def ladynerds(request):
 @login_required
 def resources(request):
     return render_to_response('resources.html', RequestContext(request))
+
+@login_required
+def faq(request):
+    return render_to_response('faq.html', RequestContext(request))
