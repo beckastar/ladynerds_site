@@ -97,4 +97,12 @@ This will make it easier for other folks to help without duplicating code.
 - If you're a contributor, please track the feature you're working on.  Ask Becka for access to the Spreadsheet in Google Docs that tracks all the issues. 
 - If you're a contributor, please get a code review before accepting your own pull requests :)
 
+This is a screenshot of what you should see, currently (as of Feb 24, 2016), after you login:
+
+
+
+
+
 Have fun!
+
+
