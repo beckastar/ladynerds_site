@@ -20,10 +20,14 @@ Nice to haves:
 
 Currently has:
 - Login /logout 
-- About page url 
-- Profile form  
+- About page url with data  
+- Profile form 
 - working navbar 
-- Resources page
+- Resources page stub
+- LN Twitter feed stub 
+- Code of Conduct stub 
+
+Stubs have a view, url, and a link from the navbar, but lack content. 
 
 ## How to Contribute:
 
