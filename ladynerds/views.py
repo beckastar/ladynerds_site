@@ -22,6 +22,12 @@ def index(request):
 
 def about(request):
     return render_to_response('about.html', RequestContext(request))
+
+def twitter_feed(request):
+    return render_to_response('twitter_feed.html', RequestContext(request))
+
+def code_of_conduct(request):
+    return render_to_response('code_of_conduct.html', RequestContext(request))
     
 def login(request):
     username = request.POST['username']
@@ -46,8 +52,12 @@ def profile(request):
             print(messages.error(request, "Error"))
     return render(request, "profileform.html", RequestContext(request, {'form': form, 'profile': profile,}))
 
+@login_required
 def ladynerds(request):
     ladynerds = UserProfile.objects.all()
     context_dict = {'ladynerds':ladynerds}
     return render_to_response('ladynerds.html', RequestContext(request, context_dict))
 
+@login_required
+def resources(request):
+    return render_to_response('resources.html', RequestContext(request))
