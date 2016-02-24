@@ -108,6 +108,20 @@ header {
     font-family: 'VT323';
 }
 
+/* Content Styles */
+
+.question {
+    font-style: bold;
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
 /*not used currently */
 .divider{
     width:10px;
