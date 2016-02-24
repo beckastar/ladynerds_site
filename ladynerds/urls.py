@@ -30,6 +30,6 @@ urlpatterns = [
     url(r'^profile/', profile, name='profile'),
     url(r'^resources/', resources, name='resources'),
     url(r'^twitter_feed/', twitter_feed, name='twitter_feed'),
-    url(r'^code_of_conduct/', code_of_conduct, name='code_of_conduct')
+    url(r'^code_of_conduct/', code_of_conduct, name='code_of_conduct'),
     url(r'^faq/', faq, name='faq')
 ]
