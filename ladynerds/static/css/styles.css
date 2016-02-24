@@ -9,6 +9,7 @@ body {
     background-color: white;
     /*old: #86AAAC;*/
 }
+
 header {
     padding: 25px 0 35px;
     display: inline;
@@ -192,9 +193,7 @@ table td {
     text-align: center;
     padding-left: 2em;
     padding-right: 2em;
-    /*background: #ebecda;*/
     background: #276693;
-    /*background: rgb(191, 179, 191); /*this is the table body */*/
 }
 
 .showTable {
@@ -274,6 +273,15 @@ table td {
     color: #B1E6E9;
 }
 
+.table_instructions {
+    font-family: verdana;
+    font-size: 15px;
+    color: #C6F3CA;
+    position: relative;
+    /* top: -0.9em; */
+    padding-top: 19px;
+}
+
 #profile_button .table_button{
     width: 8em;
 }
@@ -297,22 +305,6 @@ input #vehicle_button .table_button {
 .help_text_wrap{
     position: relative;
 }
-
-/*.table_instructions {
-    position: fixed;
-    z-index: 10;
-    width: 6em;
-    left: 15%;
-    bottom: 51%;
-    font-size: 25px;
-    width: 34%;
-    height: 46%;
-    border: 2px solid purple;
-    border-radius: 5px;
-    z-index: 3;
-    top: 29%;
-    background-color: rgb(237, 210, 229);
-}*/
 
 #logintable {
     position: relative;
@@ -449,7 +441,6 @@ s
 
 #profile_title {
     font-size: 1.3em;
-    left: 29%;
 }
 
 #vehicle_title {
