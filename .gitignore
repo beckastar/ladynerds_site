@@ -1,6 +1,7 @@
 *.pyc
-ladynerds/*.pyc
+
 env*
+ladynerds/*.pyc
 
 # Django stuff:
 *.log
