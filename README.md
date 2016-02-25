@@ -27,7 +27,7 @@ Currently has:
 - LN Twitter feed stub 
 - Code of Conduct stub 
 
-Stubs have a view, url, and a link from the navbar, but lack content. 
+Stubs have a view, url, and a link from the navbar, but lack content and logic. 
 
 ## How to Contribute:
 
@@ -95,12 +95,12 @@ This will make it easier for other folks to help without duplicating code.
     - Make sure your pull request is comparing your local issue branch to the the original 
     repos 'static' branch.
 - If you're a contributor, please track the feature you're working on.  Ask Becka for access to the Spreadsheet in Google Docs that tracks all the issues. 
+- It's very helpful to add the db.sqlite3 to your gitignore file while we're working without data 
 - If you're a contributor, please get a code review before accepting your own pull requests :)
 
-This is a screenshot of what you should see, currently (as of Feb 24, 2016), after you login:
+This is a screenshot of what you should see, currently (as of Feb 24, 2016), after you login. If it doesn't look like this, something is amiss:
 
 ![alt tag](https://raw.githubusercontent.com/beckastar/ladynerds_site/static/screenshots/feb24screenshot.png)
-
 
 
 Have fun!
