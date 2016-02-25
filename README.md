@@ -98,9 +98,9 @@ This will make it easier for other folks to help without duplicating code.
 - It's very helpful to add the db.sqlite3 to your gitignore file while we're working without data 
 - If you're a contributor, please get a code review before accepting your own pull requests :)
 
-This is a screenshot of what you should see, currently (as of Feb 24, 2016), after you login. If it doesn't look like this, something is amiss:
+This is a screenshot of what you should see, currently (as of Feb 24, 2016), after you login. If it doesn't look like this, 
 
-![alt tag](https://raw.githubusercontent.com/beckastar/ladynerds_site/static/images/feb24screenshot.png)
+The site currently has a black header with a black navbar, with neon green font. If you see something else, you're on the wrong branch. 
 
 
 Have fun!
