@@ -99,7 +99,7 @@ This will make it easier for other folks to help without duplicating code.
 
 This is a screenshot of what you should see, currently (as of Feb 24, 2016), after you login:
 
-
+![alt tag](https://raw.githubusercontent.com/beckastar/ladynerds_site/static/screenshots/feb24screenshot.png)
 
 
 
