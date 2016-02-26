@@ -91,9 +91,10 @@ $ git branch
   static
 * my-branch
 $ git pull origin static
+$ git push origin my-branch
 ```
 
-This merges in any updates that have been made since the last time you did a git pull. This ensures that your pull request will only have **your** changes in it, rather than any changes that have happened since you made your branch.
+This merges in any updates that have been made since the last time you did a git pull. This ensures that your pull request will only have **your** changes in it, rather than any changes that have happened since you made your branch. Then you push up your whole branch, so you can submit a pull request for it.
 
 ## Run the site locally:
 
