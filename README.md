@@ -2,6 +2,18 @@
 
 LadyNerds are an organization comprised of people who graduated from the Hackbright Academy coding bootcamp.  There are roughly 300 of us working in a variety of roles within the tech industry, primarily in San Francisco, but also places like Seattle, Portland, and New York. 
 
+## Table of Contents
+- [About the Site](https://github.com/beckastar/ladynerds_site#about-the-site)
+- [Tracking Progress](https://github.com/beckastar/ladynerds_site#tracking-progress)
+    - [Making an Issue](https://github.com/beckastar/ladynerds_site#making-an-issue)
+    - [Tags](https://github.com/beckastar/ladynerds_site#tags)
+    - [Suggested Workflow](https://github.com/beckastar/ladynerds_site#suggested-workflow)
+- [How To Contribute](https://github.com/beckastar/ladynerds_site#how-to-contribute)
+    - [Set Up a Local Repo](https://github.com/beckastar/ladynerds_site#set-up-a-local-repo)
+    - [Choose An Issue](https://github.com/beckastar/ladynerds_site#choose-an-issue)
+- [Tips and Tricks](https://github.com/beckastar/ladynerds_site#tips-and-tricks)
+
+
 ## About the Site
 This CRUD webapp is an ongoing collective project! Any LadyNerd is welcome to contribute. There are instructions for getting started below. Check out the 'issues' tab for things that need to be done.
 
@@ -95,7 +107,7 @@ $ python manage.py runserver
 ```
 And now you can view the site locally at http://localhost:8000/
 
-### Find an Issue to Work on:
+#### Choose an Issue:
 Check out the 'issues' tab (at the top of this repo) to find something you'd like to work on. (Be sure to read [this section on issues](https://github.com/beckastar/ladynerds_site#tracking-progress) before diving in, so you know how it all works.)
 
 ## How to keep your repos in sync :
@@ -109,7 +121,7 @@ Before you can make a pull request, pull and merge any updates from the orginal 
 
 Keep in mind that if there are changes to both static and master, you will need to go through the fetch, merge, and push steps of this process in both branches
 
-## General Stuff to keep in mind:
+## Tips and Tricks:
 
 - Check out the 'issues' for features that we'd like to work on, or are already working on.
     - IMPORTANT: Before you start working on your local repo, make a local branch for the issue
