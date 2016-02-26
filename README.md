@@ -67,14 +67,14 @@ $ git branch
 ```
 ## Run the site locally:
 
-Acvtivate a virtual environment and install dependencies:
+Acvtivate a virtual environment and install dependencies, like Django:
 ```sh
 $ virtualenv env
 $ source env/bin/activate
 $ pip install -r requirements.txt
 ```
 
-After you've installed Django and the other requirements:
+After you've installed the dependencies:
 
 ```sh
 $ python manage.py runserver
