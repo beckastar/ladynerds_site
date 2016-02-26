@@ -41,18 +41,18 @@ Tags help other people understand each issue! Here's some suggestions:
 - `bug`: Something is broken, and not just because we haven't gotten there yet
 
 #### Suggested workflow
-Kelsey think it would be great if we had a dancing kitten on the front page. She makes an issue called "Dancing Kitten". She tags it "good-for-beginner", because it should be pretty simple, and  "help-wanted", because she doesn't have time to do it right now. She also links to a kitten gif, and adds a checklist:
+**Kelsey** thinks it would be great if we had a dancing kitten on the front page. She makes an issue called "Dancing Kitten". She tags it "good-for-beginner", because it should be pretty simple, and  "help-wanted", because she doesn't have time to do it right now. She also links to a kitten gif, and adds a checklist:
 - [ ] Put kitten gif into static/images folder
 - [ ] Link to image on main page
 - [ ] Adjust CSS to make sure it fits in with the other content
 
-Shadow is looking for a fairly simple issue to get started on. They see "Dancing Kitten" and love the idea! They add a comment onto the issue:
+**Shadow** is looking for a fairly simple issue to get started on. They see "Dancing Kitten" and love the idea! They add a comment onto the issue:
 > Awesome idea! I'm working on it now :)
 
 Shadow gets everything set up on their machine, then makes a new branch for their work: `kitten-dance`. They work through the checklist, being sure to commit often and ask questions when they get stuck. When they're done, they make sure `kitten-dance ` is up to date with `static`, then push their **whole branch** up to the main repo (they don't merge it yet, because they want a code review first). Then Shadow makes a **pull request** and links it to the issue. Back in the issue, they add another comment and close the issue:
 > Finished! I made a pull request for branch 'kitten-dance' and would love a code review
 
-Sydney sees an open pull request, so she checks out their code. Everything looks good, she accepts the pull request, and *tada!* Now we have dancing kittens on the main page.
+**Sydney** sees an open pull request, so she checks out their code. Everything looks good, she accepts the pull request, and *tada!* Now we have dancing kittens on the front page.
 
 ## How to Contribute:
 #### Set Up Local Repo
@@ -68,16 +68,23 @@ $ git clone https://github.com/[your-username-here]/ladynerds_site.git ladynerds
 $ cd ladynerds_site
 ```
 
+## Run the site locally:
+
+**Activate a virtual environment and install dependencies:**
+```sh
+$ virtualenv env
+$ source env/bin/activate
+$ pip install -r requirements.txt
+```
+
 **Checkout Static Branch:**
+This is where we're currently working. It's rough, I know.
+
 See what branches you have locally:
 ```sh
 $ git branch
 * master
   static
-```
-We're currently working on static, so check that out and make branches from there:
-```sh
-$ git checkout static
 ```
 
 *If you only see master, get the static branch from your online repo:
@@ -85,19 +92,16 @@ $ git checkout static
 $ git checkout --track origin/static
 ```
 
+We're currently working on static, so check that out and make branches from there:
+```sh
+$ git checkout static
+```
+
 Now it should look like this when you 'git branch':
 ```sh
 $ git branch
   master
 * static
-```
-## Run the site locally:
-
-**Acvtivate a virtual environment and install dependencies:**
-```sh
-$ virtualenv env
-$ source env/bin/activate
-$ pip install -r requirements.txt
 ```
 
 **Run the web server:**
