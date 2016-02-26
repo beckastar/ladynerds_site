@@ -10,9 +10,10 @@ LadyNerds are an organization comprised of people who graduated from the Hackbri
     - [Suggested Workflow](https://github.com/beckastar/ladynerds_site#suggested-workflow)
 - [How To Contribute](https://github.com/beckastar/ladynerds_site#how-to-contribute)
     - [Set Up a Local Repo](https://github.com/beckastar/ladynerds_site#set-up-a-local-repo)
+    - [Keep Repos in Sync](https://github.com/beckastar/ladynerds_site#keep-repos-in-sync)
     - [Choose An Issue](https://github.com/beckastar/ladynerds_site#choose-an-issue)
 - [Tips and Tricks](https://github.com/beckastar/ladynerds_site#tips-and-tricks)
-
+Keep Repos in Sync
 
 ## About the Site
 This CRUD webapp is an ongoing collective project! Any LadyNerd is welcome to contribute. There are instructions for getting started below. Check out the 'issues' tab for things that need to be done.
@@ -68,6 +69,19 @@ $ git clone https://github.com/[your-username-here]/ladynerds_site.git ladynerds
 $ cd ladynerds_site
 ```
 
+#### Keep Repos in Sync:
+If you're not a contributor to the main repo, you'll have to submit pull-requests from **your** github repo, rather than this one.
+Before you can make a pull request, pull and merge any updates from the orginal repo:
+* First, [configure your remote](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
+* Next, [get changes from the original repo](https://help.github.com/articles/syncing-a-fork/)
+    * (substitute "static" for "master" if your updates are in that branch)
+    * (changes to this README should be done in master)
+* Finally, [update YOUR github repo with your sync'ed and merged local changes](https://help.github.com/articles/pushing-to-a-remote/)
+* Now you can submit a pull request!
+
+Keep in mind that if there are changes to both static and master, you will need to go through the fetch, merge, and push steps of this process in both branches
+
+
 ## Run the site locally:
 
 **Activate a virtual environment and install dependencies:**
@@ -114,16 +128,6 @@ And now you can view the site locally at http://localhost:8000/
 #### Choose an Issue:
 Check out the 'issues' tab (at the top of this repo) to find something you'd like to work on. (Be sure to read [this section on issues](https://github.com/beckastar/ladynerds_site#tracking-progress) before diving in, so you know how it all works.)
 
-## How to keep your repos in sync :
-Before you can make a pull request, pull and merge any updates from the orginal repo:
-* First, [configure your remote](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
-* Next, [Get changes from the original repo](https://help.github.com/articles/syncing-a-fork/)
-    * (substitute "static" for "master" if your updates are in that branch)
-    * (changes to this README should be done in master)
-* Finally, [update YOUR github repo with your sync'ed and merged local changes](https://help.github.com/articles/pushing-to-a-remote/)
-* Now you can submit a pull request!
-
-Keep in mind that if there are changes to both static and master, you will need to go through the fetch, merge, and push steps of this process in both branches
 
 ## Tips and Tricks:
 
