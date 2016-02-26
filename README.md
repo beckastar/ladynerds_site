@@ -82,7 +82,7 @@ Keep in mind that if there are changes to both static and master, you will need 
 
 **If you are a contributor:**
 - You have write access to the main repo. 
-- Make sure to make new branches for your changes!
+- Make sure to make a new branch for your changes!
 - Update your branch with the static branch before submitting a pull request, so merging will be easier.
 
 ```sh
@@ -106,9 +106,8 @@ $ pip install -r requirements.txt
 ```
 
 **Checkout Static Branch:**
-This is where we're currently working. It's rough, I know.
 
-See what branches you have locally:
+This is where we're currently working. It's rough, I know. See what branches you have locally:
 ```sh
 $ git branch
 * master
