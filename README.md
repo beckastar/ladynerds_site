@@ -1,30 +1,9 @@
 # ladynerds_site
 
 LadyNerds are an organization comprised of people who graduated from the Hackbright Academy coding bootcamp.  There are roughly 300 of us working in a variety of roles within the tech industry, primarily in San Francisco, but also places like Seattle, Portland, and New York. 
+
 ## About the Site
-This CRUD webapp is a collective project that will have the following features as part of the MVP:
-
-- Put all of our info that is currently in Google Docs in one central place 
-- Google Cal integration:   https://developers.google.com/google-apps/calendar/quickstart/python#prerequisites
-- Good UI
-
-We've chosen to use the old terminal color scheme of green on a black background. The green color hex value: #00ff00
-
-The terminal font which we're using for the logo and navbar is in google fonts: https://www.google.com/fonts/specimen/VT323
-
-Nice to haves:
-- Slack integration 
-
-Currently has:
-- Login /logout 
-- About page url with data  
-- Profile form 
-- working navbar 
-- Resources page stub
-- LN Twitter feed stub 
-- Code of Conduct stub 
-
-Stubs have a view, url, and a link from the navbar, but lack content and logic. 
+This CRUD webapp is an ongoing collective project! Any LadyNerd is welcome to contribute. There are instructions for getting started below. Check out the 'issues' tab for things that need to be done.
 
 ## Tracking Progress
 We're tracking progress using GitHub's Issues. 
