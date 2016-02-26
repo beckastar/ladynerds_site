@@ -1,7 +1,7 @@
 # ladynerds_site
 
 LadyNerds are an organization comprised of people who graduated from the Hackbright Academy coding bootcamp.  There are roughly 300 of us working in a variety of roles within the tech industry, primarily in San Francisco, but also places like Seattle, Portland, and New York. 
-
+## About the Site
 This CRUD webapp is a collective project that will have the following features as part of the MVP:
 
 - Put all of our info that is currently in Google Docs in one central place 
@@ -26,10 +26,45 @@ Currently has:
 
 Stubs have a view, url, and a link from the navbar, but lack content and logic. 
 
+## Tracking Progress
+We're tracking progress using GitHub's Issues. 
+Things to remember:
+- **Check** the comments of an issue before getting started, to get up-to-date on its progress.
+- **Leave** good comments! Starting work on an issue? Claim it! Stopping? Let people know how far you got, and push your branch up.
+    
+#### Making an Issue
+@Lavinia is working on an Issues template, but in the meantime,
+**please:**
+- Break down the feature into a checklist using [  ]'s.
+    * A progress bar will magically appear on the issue
+    * If someone only completes part of the work, folks have an idea of where to start
+    * It's not as intimidating for less-experienced folks to get started
+- Use good tags to describe the issue (see below for suggestions)
+
+#### Tags
+Tags help other people understand each issue! Here's some suggestions:
+- `help-wanted`: This needs someone to help out
+- `good-for-beginner`: For small or simple tasks that a fresh grad could easily handle. Please take some extra time and make notes or a checklist, to make it easy for folks to know what to do.
+- **Category Tags:** Examples: `OAuth`, `Form`.
+- `bug`: Something is broken, and not just because we haven't gotten there yet
+- `feature`: A whole new feature.
+
+#### Suggested workflow
+Kelsey think it would be great if we had a dancing kitten on the front page. She makes an issue called "Dancing Kitten". She tags it "good-for-beginner", because it should be pretty simple, and  "help-wanted", because she doesn't have time to do it right now. She also links to a kitten gif, and adds a checklist:
+- [ ] Put kitten gif into static/images folder
+- [ ] Link to image on main page
+- [ ] Adjust CSS to make sure it fits in with the other content
+
+Shadow is looking for a fairly simple issue to get started on. They see "Dancing Kitten" and love the idea! They add a comment onto the issue:
+> Awesome idea! I'm working on it now :)
+
+Shadow gets everything set up on their machine, then makes a new branch for their work: `kitten-dance`. They work through the checklist, being sure to commit often and ask questions when they get stuck. When they're done, they make sure `kitten-dance ` is up to date with `static`, then push their **whole branch** up to the main repo (they don't merge it yet, because they want a code review first). Then Shadow makes a **pull request** and links it to the issue. Back in the issue, they add another comment and close the issue:
+> Finished! I made a pull request for branch 'kitten-dance' and would love a code review
+
+Sydney sees an open pull request, so she checks out their code. Everything looks good, she accepts the pull request, and *tada!* Now we have dancing kittens on the main page.
+
 ## How to Contribute:
-
-### Set Up Local Repo
-
+#### Set Up Local Repo
 You can either message Becka to be added as a contributor, or you can take the following steps:
 
 **Fork the Repo:** (there's a button in the upper right part of your screen)
@@ -67,23 +102,24 @@ $ git branch
 ```
 ## Run the site locally:
 
-Acvtivate a virtual environment and install dependencies, like Django:
+**Acvtivate a virtual environment and install dependencies:**
 ```sh
 $ virtualenv env
 $ source env/bin/activate
 $ pip install -r requirements.txt
 ```
 
-After you've installed the dependencies:
+**Run the web server:**
 
 ```sh
 $ python manage.py runserver
 ```
 And now you can view the site locally at http://localhost:8000/
 
+### Find an Issue to Work on:
+Check out the 'issues' tab (at the top of this repo) to find something you'd like to work on. (Be sure to read [this section on issues](https://github.com/beckastar/ladynerds_site#tracking-progress) before diving in, so you know how it all works.)
 
 ## How to keep your repos in sync :
-
 Before you can make a pull request, pull and merge any updates from the orginal repo:
 * First, [configure your remote](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 * Next, [Get changes from the original repo](https://help.github.com/articles/syncing-a-fork/)
