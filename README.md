@@ -13,7 +13,6 @@ LadyNerds are an organization comprised of people who graduated from the Hackbri
     - [Keep Repos in Sync](https://github.com/beckastar/ladynerds_site#keep-repos-in-sync)
     - [Choose An Issue](https://github.com/beckastar/ladynerds_site#choose-an-issue)
 - [Tips and Tricks](https://github.com/beckastar/ladynerds_site#tips-and-tricks)
-Keep Repos in Sync
 
 ## About the Site
 This CRUD webapp is an ongoing collective project! Any LadyNerd is welcome to contribute. There are instructions for getting started below. Check out the 'issues' tab for things that need to be done.
@@ -70,7 +69,7 @@ $ cd ladynerds_site
 ```
 
 #### Keep Repos in Sync:
-If you're not a contributor to the main repo, you'll have to submit pull-requests from **your** github repo, rather than this one.
+**If you're not a contributor** to the main repo, you'll have to submit pull-requests from **your** github repo, rather than this one.
 Before you can make a pull request, pull and merge any updates from the orginal repo:
 * First, [configure your remote](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 * Next, [get changes from the original repo](https://help.github.com/articles/syncing-a-fork/)
@@ -81,6 +80,20 @@ Before you can make a pull request, pull and merge any updates from the orginal 
 
 Keep in mind that if there are changes to both static and master, you will need to go through the fetch, merge, and push steps of this process in both branches
 
+**If you are a contributor:**
+- You have write access to the main repo. 
+- Make sure to make new branches for your changes!
+- Update your branch with the static branch before submitting a pull request, so merging will be easier.
+
+```sh
+$ git branch
+  master
+  static
+* my-branch
+$ git pull origin static
+```
+
+This merges in any updates that have been made since the last time you did a git pull. This ensures that your pull request will only have **your** changes in it, rather than any changes that have happened since you made your branch.
 
 ## Run the site locally:
 
