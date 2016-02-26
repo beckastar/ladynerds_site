@@ -27,7 +27,7 @@ Things to remember:
 @Lavinia is working on an Issues template, but in the meantime,
 **please:**
 - Remember each issue should be a doable chunk that one person can accomplish.
-- Break down the feature into a checklist using [  ]'s.
+- Break the issue down into a checklist using [  ]'s.
     * A progress bar will magically appear on the issue
     * If someone only completes part of the work, folks have an idea of where to start
     * It's not as intimidating for less-experienced folks to get started
@@ -69,7 +69,8 @@ $ cd ladynerds_site
 ```
 
 #### Keep Repos in Sync:
-**If you're not a contributor** to the main repo, you'll have to submit pull-requests from **your** github repo, rather than this one.
+**If you're not an official contributor:**
+You'll have to submit pull-requests from **your** github repo, rather than this one.
 Before you can make a pull request, pull and merge any updates from the orginal repo:
 * First, [configure your remote](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 * Next, [get changes from the original repo](https://help.github.com/articles/syncing-a-fork/)
@@ -80,7 +81,7 @@ Before you can make a pull request, pull and merge any updates from the orginal 
 
 Keep in mind that if there are changes to both static and master, you will need to go through the fetch, merge, and push steps of this process in both branches
 
-**If you are a contributor:**
+**If you are an official contributor:**
 - You have write access to the main repo. 
 - Make sure to make a new branch for your changes!
 - Update your branch with the static branch before submitting a pull request, so merging will be easier.
@@ -105,7 +106,7 @@ $ source env/bin/activate
 $ pip install -r requirements.txt
 ```
 
-**Checkout Static Branch:**
+**Checkout `static` branch:**
 
 This is where we're currently working. It's rough, I know. See what branches you have locally:
 ```sh
