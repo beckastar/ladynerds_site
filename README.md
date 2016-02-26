@@ -26,6 +26,7 @@ Things to remember:
 #### Making an Issue
 @Lavinia is working on an Issues template, but in the meantime,
 **please:**
+- Remember each issue should be a doable chunk that one person can accomplish.
 - Break down the feature into a checklist using [  ]'s.
     * A progress bar will magically appear on the issue
     * If someone only completes part of the work, folks have an idea of where to start
