@@ -39,7 +39,6 @@ Tags help other people understand each issue! Here's some suggestions:
 - `good-for-beginner`: For small or simple tasks that a fresh grad could easily handle. Please take some extra time and make notes or a checklist, to make it easy for folks to know what to do.
 - **Category Tags:** Examples: `OAuth`, `Form`.
 - `bug`: Something is broken, and not just because we haven't gotten there yet
-- `feature`: A whole new feature.
 
 #### Suggested workflow
 Kelsey think it would be great if we had a dancing kitten on the front page. She makes an issue called "Dancing Kitten". She tags it "good-for-beginner", because it should be pretty simple, and  "help-wanted", because she doesn't have time to do it right now. She also links to a kitten gif, and adds a checklist:
