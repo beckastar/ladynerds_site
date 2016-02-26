@@ -24,8 +24,9 @@ Things to remember:
 - **Leave** good comments! Starting work on an issue? Claim it! Stopping? Let people know how far you got, and push your branch up.
     
 #### Making an Issue
-@Lavinia is working on an Issues template, but in the meantime,
-**please:**
+Please use the appropriate template when making a new issue 
+(ISSUES_TEMPLATE_FEATURES.md for new features, changes, and other non-bug issues.
+ISSUES_TEMPLATE_BUGS.md for issues about bugs)
 - Remember each issue should be a doable chunk that one person can accomplish.
 - Break the issue down into a checklist using [  ]'s.
     * A progress bar will magically appear on the issue

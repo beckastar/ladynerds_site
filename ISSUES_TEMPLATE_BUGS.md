@@ -29,3 +29,13 @@
 * Environment name and version (e.g. Chrome 39, node.js 5.4):
 * Operating System and version (desktop or mobile):
 * Link to your project:
+
+
+<!-- NOTE: Remember to TAG this as a BUG and add any other relevant tags
+help-wanted: This needs someone to help out
+good-for-beginner: For small or simple tasks that a fresh grad could easily handle. 
+                   Please take some extra time and make notes or a very detailed checklist, 
+                   to make it easy for folks to know what to do.
+Category Tags: Examples: OAuth, Form. 
+
+-->
