@@ -127,11 +127,11 @@ Keep in mind that if there are changes to both static and master, you will need 
     - IMPORTANT: Before you start working on your local repo, make a local branch for the issue
     you are working on.  Do all of your work for that issue on that branch.  This will make pull
     requests less confusing for everyone later on.
-- If you do some work, submit a pull request and be sure to comment with whatever work you've done. 
+- If you do some work, submit a pull request/push up your branch and be sure to comment with whatever work you've done. 
 This will make it easier for other folks to help without duplicating code.
     - If you keep working, keep pushing! The pull request will keep updated.
-    - Make sure your pull request is comparing your local issue branch to the the original 
-    repos 'static' branch.
+    - Make sure your pull request is comparing your local `issue` branch to the the original 
+    repos `static` branch.
 - It's very helpful to add the db.sqlite3 to your gitignore file while we're working without data 
 - If you're a contributor, please get a code review before accepting your own pull requests :)
 
