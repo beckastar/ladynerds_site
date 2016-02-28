@@ -28,6 +28,10 @@ def twitter_feed(request):
 
 def code_of_conduct(request):
     return render_to_response('code_of_conduct.html', RequestContext(request))
+
+
+def open_source(request):
+    return render_to_response('open_source.html', RequestContext(request))
     
 def login(request):
     username = request.POST['username']
