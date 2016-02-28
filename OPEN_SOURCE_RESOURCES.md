@@ -1,6 +1,6 @@
 # Reading
 
-  [For First Timer's Only](https://medium.com/@kentcdodds/first-timers-only-78281ea47455#.bfanu1yv7)
+  [For First Timers Only](https://medium.com/@kentcdodds/first-timers-only-78281ea47455#.bfanu1yv7)
 
   [The Beginner’s Guide to Contributing to Open Source Projects](https://blog.newrelic.com/2014/05/05/open-source_gettingstarted/)
 
