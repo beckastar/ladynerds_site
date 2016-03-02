@@ -12,7 +12,7 @@ from django.contrib.admin.views.decorators import staff_member_required
 from django.utils.decorators import method_decorator
 from django.views.generic.detail import SingleObjectMixin
 from django.contrib import messages
-from forms import UserProfileForm
+from forms import UserProfileForm, ContactForm
 import itertools
 
 
@@ -21,7 +21,9 @@ def index(request):
 	return render_to_response('index.html', RequestContext(request))
 
 def contact(request):
-    return render_to_response('contact.html', RequestContext(request))
+    form = ContactForm 
+
+    return render_to_response('contact.html', RequestContext(request, {'form': form}))
 
 def twitter_feed(request):
     return render_to_response('twitter_feed.html', RequestContext(request))
