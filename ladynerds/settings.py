@@ -128,3 +128,11 @@ print "look here:" + STATIC_URL
 STATICFILES_DIRS = (
     os.path.join(SETTINGS_PATH, 'static'),
 )
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
+DEFAULT_FROM_EMAIL = 'beckastar@gmail.com'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False 
+EMAIL_PORT = 1025

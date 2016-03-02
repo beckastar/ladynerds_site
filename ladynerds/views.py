@@ -1,8 +1,9 @@
-from models import UserProfile 
-from django.shortcuts import render, redirect
+from django.template.loader import get_template
+from django.core.mail import EmailMessage
+from django.template import Context
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
-from django.shortcuts import render_to_response, get_object_or_404
+from django.shortcuts import render_to_response, get_object_or_404, render, redirect
 from django.core.context_processors import csrf
 from django.template import RequestContext
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
@@ -13,7 +14,7 @@ from django.utils.decorators import method_decorator
 from django.views.generic.detail import SingleObjectMixin
 from django.contrib import messages
 from forms import UserProfileForm, ContactForm
-import itertools
+from models import UserProfile 
 
 
 
@@ -21,7 +22,39 @@ def index(request):
 	return render_to_response('index.html', RequestContext(request))
 
 def contact(request):
-    form = ContactForm 
+    form_class = ContactForm 
+
+    if request.method == 'POST':
+        form = form_class(data=request.POST)
+
+        if form.is_valid():
+            contact_name = request.POST.get('contact_name','')
+            contact_email = request.POST.get('contact_email', '')
+            form_content = request.POST.get('content', '')
+
+            template = get_template('contact_template.txt')
+            context = Context({
+                'contact_name': contact_name,
+                'contact_email': contact_email,
+                'form_content': form_content,
+            })
+            content = template.render(context)
+
+            email = EmailMessage(
+                "New contact form submission",
+                content,
+                "LadyNerds" +'',
+                ['beckastar@gmail.com'],
+                headers = {'Reply-To': contact_email }
+            )
+            email.send()
+            return redirect('contact')
+
+    return render(request, 'contact.html', {
+        'form': form_class,
+    })
+
+
 
     return render_to_response('contact.html', RequestContext(request, {'form': form}))
 
