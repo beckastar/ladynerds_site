@@ -57,8 +57,7 @@ header {
 
 #nav li:hover a{
     background-image: none;
-    /*color: ;*/
-    font-size: .6em;
+    color: ;
 }
 
 #nav li:hover ul li {
@@ -68,6 +67,7 @@ header {
 /*colors the top letters in nav */
 #nav li a:hover {
     color: #00ff00;
+    /*font-size: .6em;*/
 }
 
 #nav li {

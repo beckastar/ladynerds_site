@@ -20,8 +20,8 @@ import itertools
 def index(request):
 	return render_to_response('index.html', RequestContext(request))
 
-def about(request):
-    return render_to_response('about.html', RequestContext(request))
+def contact(request):
+    return render_to_response('contact.html', RequestContext(request))
 
 def twitter_feed(request):
     return render_to_response('twitter_feed.html', RequestContext(request))

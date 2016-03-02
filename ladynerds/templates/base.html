@@ -21,7 +21,6 @@
                 <li><a href={% url 'logout' %}>Logout</a></li>
                 <li><a href={% url 'profile' %}>Edit Profile</a></li>
                 <li><a href={% url 'ladynerds' %}>LadyNerds</a></li>
-                <li><a href={% url 'faq' %}>F.A.Q.</a></li>
                 <li><a href={% url 'twitter_feed' %}>TwitterFeed</a></li>
                 <!-- <li><a href="#">Slack</a></li> -->
                 <li><a href={% url 'resources' %}>Resources</a>
@@ -30,7 +29,8 @@
                   </ul>
                 </li>
             {% endif %}
-                <li><a href={% url 'about' %}>About LadyNerds</a></li>
+                <li><a href={% url 'index' %}>About LadyNerds</a></li>
+                <li><a href={% url 'contact' %}>Contact Us</a></li>
                 <li><a href={% url 'code_of_conduct' %}>Code of Conduct</a></li>
             </ul>
           </div>
