@@ -104,3 +104,7 @@ def resources(request):
 @login_required
 def faq(request):
     return render_to_response('faq.html', RequestContext(request))
+
+@login_required
+def calendar(request):
+    return render_to_response('calendar.html', RequestContext(request))

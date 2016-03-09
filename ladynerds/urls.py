@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from .views import contact, index, login, ladynerds, profile, resources, twitter_feed, code_of_conduct, faq, open_source 
+from .views import contact, index, login, ladynerds, profile, resources, twitter_feed, code_of_conduct, faq, open_source, calendar
 from django.views.generic import TemplateView
 from django.views.generic.edit import CreateView
 from django.contrib.auth.forms import UserCreationForm
@@ -32,5 +32,6 @@ urlpatterns = [
     url(r'^twitter_feed/', twitter_feed, name='twitter_feed'),
     url(r'^open_source/', open_source, name='open_source'),
     url(r'^code_of_conduct/', code_of_conduct, name='code_of_conduct'),
-    url(r'^faq/', faq, name='faq')
+    url(r'^faq/', faq, name='faq'),
+    url(r'^calendar/', calendar, name='calendar'),
 ]
