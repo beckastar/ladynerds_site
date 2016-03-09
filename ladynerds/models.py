@@ -39,6 +39,7 @@ Positions = (
     )
 
 class UserProfile(models.Model):
+    
     user = models.OneToOneField(User)
     picture = models.ImageField(upload_to='profile_images', blank=True)
     city = models.CharField(max_length = 20)
@@ -59,7 +60,7 @@ class UserProfile(models.Model):
     def __str__(self):
         return '%s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s' %(
             self.user, self.picture, self.city,
-            self.email_address, self.twitter, self.company, self.past_companies, 
+            self.email_address, self.twitter, self.company, self.past_companies, self.freelancer,
             self.languages, self.frameworks, self.year_graduated, self.season_graduated, 
             self.looking_for_job, self.position, self.position_other,
             self.date

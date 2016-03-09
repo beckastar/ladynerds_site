@@ -6,7 +6,7 @@
 	<div class="campertable shown">
 		<div class="camperheading"><h2 id="camper_heading hidden">All Bioluminauts</h2></div>
 		<div class="tablewrap">
-			<table class="gradienttable">
+			<table ass="gradienttable">
 				<thead>
 					<tr>
 						<td><p>Photo</p></td>
@@ -22,7 +22,7 @@
 						<td><p>Looking for job?</p></td>
 					</tr>
 				</thead>
-					{% for nerd in UserProfile %}
+					{% for nerd in ladynerds %}
 						<tr class="datarow">
 							<td  class="profile_pic">{{nerd.picture}}</td>
 							<td>{{nerd.user}}</td>
