@@ -16,27 +16,18 @@
             <ul id="nav">
             {% if not user.is_authenticated %}
                 <li><a href={% url 'django.contrib.auth.views.login' %}>Login</a></li>
-            {% endif %}
-            {% if user.is_authenticated %}
-                <li><a href={% url 'logout' %}>Logout</a></li>
-                <li><a href={% url 'profile' %}>Edit Profile</a></li>
-                <li><a href='#'>LadyNerds</a>
-                  <ul>
-                      <li><a href={% url 'ladynerds' %}>LadyNerd Profiles</a></li>
-                      <li><a href={% url 'twitter_feed' %}>TwitterFeed</a></li>
-                  </ul>
-                </li>
-                <!-- <li><a href="#">Slack</a></li> -->
-                <li><a href={% url 'resources' %}>Resources</a>
-                  <ul>
-                    <li><a href={% url 'open_source' %}>Open Source</a></li>
-                  </ul>
-                </li>
-                <li><a href='#'>Calendar</a>
-            {% endif %}
                 <li><a href={% url 'index' %}>About</a></li>
+            {% endif %}
                 <li><a href={% url 'contact' %}>Contact Us</a></li>
                 <li><a href={% url 'code_of_conduct' %}>Code of Conduct</a></li>
+                <li><a href={% url 'twitter_feed' %}>Twitter</a></li>
+            {% if user.is_authenticated %}
+                <li><a href={% url 'profile' %}>Edit Profile</a></li>
+                <li><a href={% url 'ladynerds' %}>LadyNerd Profiles</a></li>
+                <li><a href={% url 'logout' %}>Logout</a></li>
+                <li><a href={% url 'resources' %}>Resources</a></li>
+                <li><a href={% url 'open_source' %}>Open Source</a></li>
+            {% endif %}
             </ul>
           </div>
         </div>

@@ -13,7 +13,7 @@ from django.contrib.admin.views.decorators import staff_member_required
 from django.utils.decorators import method_decorator
 from django.views.generic.detail import SingleObjectMixin
 from django.contrib import messages
-from forms import UserProfileForm, ContactForm
+from .forms import UserProfileForm, ContactForm
 from models import UserProfile 
 
 
@@ -81,15 +81,20 @@ def login(request):
 
 @login_required
 def profile(request):
-    form = UserProfileForm(request.POST)
+    form = UserProfileForm()
+    print(str(request.user))
     if request.method == 'POST':
+        form = UserProfileForm(instance=request.user, data=request.POST)
+        print(form.data)
         if form.is_valid():
+            print("valid")
             userprofile = form.save(commit=False)
-            userprofile.user = request.user
+            # userprofile.user = request.user.username
             userprofile.save()
         else:
-            print(messages.error(request, "Error"))
-    return render(request, "profileform.html", RequestContext(request, {'form': form, 'profile': profile,}))
+            messages.error(request, form.errors)
+            print("failed")
+    return render(request, "profileform.html", RequestContext(request, {'form': form, 'profile': profile}))
 
 @login_required
 def ladynerds(request):

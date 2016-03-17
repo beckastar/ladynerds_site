@@ -1,4 +1,5 @@
 from django.db import models
+from django import forms
 from django.forms import ModelForm
 from django.contrib.auth.models import User
 
@@ -57,7 +58,7 @@ class UserProfile(models.Model):
     date = models.DateTimeField(auto_now_add=True, blank=True, null=True)
 
     def __str__(self):
-        return '%s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s' %(
+        return '%s %s %s %s %s %s %s %s %s %s %s %s %s %s %s' %(
             self.user, self.picture, self.city,
             self.email_address, self.twitter, self.company, self.past_companies, 
             self.languages, self.frameworks, self.year_graduated, self.season_graduated, 
