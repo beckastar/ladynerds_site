@@ -16,8 +16,7 @@ class UserForm(ModelForm):
 class UserProfileForm(ModelForm):
     class Meta:
         model = UserProfile
-    	fields = '__all__'
-     	    
+        exclude = ['user']
 
 class ContactForm(forms.Form):
     contact_name = forms.CharField(required=True)

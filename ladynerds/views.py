@@ -81,15 +81,28 @@ def login(request):
 
 @login_required
 def profile(request):
-    form = UserProfileForm()
-    print(str(request.user))
+
+    ## try and get the userprofile for the current profile
+    try:
+        my_user_profile = UserProfile.objects.get(user=request.user)
+    except UserProfile.DoesNotExist:
+        my_user_profile = UserProfile()
+
+    ## if it does not exist, create a new one, and pass it into instance
+    form = UserProfileForm(instance=my_user_profile)
     if request.method == 'POST':
-        form = UserProfileForm(instance=request.user, data=request.POST)
+        form = UserProfileForm(data=request.POST)
         print(form.data)
         if form.is_valid():
             print("valid")
             userprofile = form.save(commit=False)
-            # userprofile.user = request.user.username
+
+            try:
+                userprofile.id = UserProfile.objects.get(user=request.user).id
+            except UserProfile.DoesNotExist:
+                pass
+
+            userprofile.user = request.user 
             userprofile.save()
         else:
             messages.error(request, form.errors)
