@@ -7,6 +7,7 @@ html, body, .container {
 
 body {
     background-color: white;
+    overflow: hidden;
     /*old: #86AAAC;*/
 }
 
