@@ -45,10 +45,10 @@ header {
 
 #nav {
     width: 100%;
-    height: 50px;
+    height: 43px;
     padding: 0;
     margin: 0;
-    top: 15%;
+    top: 14%;
     left: 0%;
     position: absolute;
     color: black;
@@ -57,6 +57,15 @@ header {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+#nav li:first-child {
+    padding-left: 5%;
+}
+
+#nav li:last-child {
+    padding-right: 3.3%;
+}
+
 
 #nav li:hover a{
     background-image: none;
@@ -73,7 +82,7 @@ header {
 }
  
 #nav li {
-    width: 12.5%;
+    width: 13.1%;
 }
 
 #nav li {
@@ -83,11 +92,11 @@ header {
     text-align: center;
     list-style: none;
     font-family: 'VT323';
-    font-size: 1.5em;
+    /*font-size: 1.5em;*/
     /* color: gray; */
     padding: 0;
     margin: 0;
-    background-color: #201F1F;
+    background-color: #000000;
 }
 
 
@@ -111,6 +120,26 @@ header {
     font-family: 'VT323';
 }
 
+
+/*breaks a4 < 1165*/
+@media only screen and (max-width: 1180px) {
+    #nav li {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    #nav li {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 1181px) {
+    #nav li {
+        font-size: 1.5em;
+    }
+}
+
 /*not used currently */
 .divider{
     width:10px;
@@ -123,29 +152,6 @@ header {
     /*background: #EC38F2;*/
     padding-top-top: 50px solid #235B8C;
 
-}
-
-
-#profile_border {
-    position: relative;
-    width: 78%;
-    top: 49em;
-    height: 15%;
-    left: -31%;
-}
-
-#vehicle_border {
-    width: 28%;
-    top: 13em;
-    height: 3em;
-    left: -6%;
-}
-
-#sleeping_border {
-    width: 28%;
-    top: 13em;
-    height: 3em;
-    left: -6%;
 }
 
 #landingtext {
@@ -206,11 +212,7 @@ table td {
 .hideTable {
     display:none;
     visibility: hidden;
-}
-
-#allShifts {
-  display:none;  
-}
+} 
 
 .hiddentext {
     visibility: hidden;
@@ -262,28 +264,7 @@ table td {
 .table_with_form tr td:nth-child(2){
     border-radius: 0px 15px 15px 0px;
 }
-
-.table_button {
-    top: 0.5em;
-    left: 0%;
-    position: relative;
-    /*width: 8em;*/
-    height: 2.5em;
-    border-radius: 5px;
-    margin: 4px;
-    border: 5px solid black;
-    background-color: #450E45;
-    color: #B1E6E9;
-}
-
-.table_instructions {
-    font-family: verdana;
-    font-size: 15px;
-    color: #C6F3CA;
-    position: relative;
-    padding-top: 19px;
-}
-
+ 
 #profile_button .table_button{
     width: 8em;
 }
@@ -314,26 +295,6 @@ input #vehicle_button .table_button {
     top: 75px;
 }
 
-.styled-button {
-    position: relative;
-    -webkit-box-shadow: rgba(0,0,0,0.2) 0 1px 0 0;
-    -moz-box-shadow: rgba(0,0,0,0.2) 0 1px 0 0;
-    box-shadow: rgba(0,0,0,0.2) 0 1px 0 0;
-    border-bottom-color: #333;
-    border: 1px solid #0E0E0E;
-    background-color: #141415;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    color: #00ff00;
-    font-family: 'Verdana',Arial,sans-serif;
-    font-size: 14px;
-    text-shadow: #161617 0 1px 0;
-    padding: 5px;
-    top: 6em;
-    left: 21%;
-}
-
 table tr td {
     background-color: black;
 }
@@ -342,79 +303,13 @@ tr td label {
     color: #00ff00;
 }
 
-.instruction_image {
-    width: 4em;
-    height: 4em;
-    position: relative;
-    background-position: 2px 4px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url('../images/question_mark.png');
-}
-
 .hidden {
     display: none;
 }
 
 .shown{
     visibility: visible;
-}
-
-#truck_heading {
-    position: relative;
-    left: 10%;
-}
-
-.message_container {
-    position: relative;
-    left: 20%;
-    border-radius: 25px;
-    z-index: 5;
-    width: 30%;
-    height: 20%;
-    background-color: #92438D;
-    opacity: .7;
-    display: none;
-}
-
-.confirmation_message {
-    position: relative;
-    left: 20%;
-    width: 80%;
-    height: 90%;
-    font-size: 12px; 
-}
-s
-.calendar_container {
-    position: relative;
-    left: 10%;
-    top: 10%;
-}
-
-#calendar_table tr td.weekdaycell {
-    border: 5px solid black;
-    width: 100px;
-    height: 100px;
-    background-color: white;
-}
-
-#first_time {
-    position: relative;
-    width: 80%;
-    font: normal bold 18px/1.2em Arial, Verdana, Helvetica;  
-}
-
-#bikeform {
-    position: relative;
-    width: 85%;
-}
-
-#campers {
-    position: relative;
-    top: 10%;
-    left: 10%;
-    width: 80%;
-}
+} 
 
 .toggleview { 
     position: relative;
@@ -470,50 +365,6 @@ s
     width: 65%;
     height: 40%;
 }
-
-.squaredTwo #id_camping_this_year, .squaredTwo #id_has_ticket, .squaredTwo #id_looking_for_ticket, .squaredTwo #id_primary_driver_in_your_party {
-  width: 28px;
-  height: 28px;
-  position: relative;
-  margin: 20px auto;
-  background: #fcfff4;
-  background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
-  box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
-  label {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    position: absolute;
-    left: 4px;
-    top: 4px;
-    background: linear-gradient(top, #222 0%, #45484d 100%);
-    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
-    &:after {
-      content: '';
-      width: 9px;
-      height: 5px;
-      position: absolute;
-      top: 4px;
-      left: 4px;
-      border: 3px solid #fcfff4;
-      border-top: none;
-      border-right: none;
-      background: transparent;
-      opacity: 0;
-      transform: rotate(-45deg);
-    }
-    &:hover::after {
-      opacity: 0.3;
-    }
-  }
-  input[type=checkbox] {
-    visibility: hidden;
-    &:checked + label:after {
-      opacity: 1;
-    }    
-  }
-} 
-
 /*Block Content Styles*/
 .block-content {
     font-family: "Trebuchet MS", Helvetica, sans-serif;

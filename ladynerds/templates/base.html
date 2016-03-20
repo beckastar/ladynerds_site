@@ -23,10 +23,9 @@
                 <li><a href={% url 'twitter_feed' %}>Twitter</a></li>
             {% if user.is_authenticated %}
                 <li><a href={% url 'profile' %}>Edit Profile</a></li>
-                <li><a href={% url 'ladynerds' %}>LadyNerd Profiles</a></li>
+                <li><a href={% url 'ladynerds' %}>Ladynerds</a></li>
                 <li><a href={% url 'logout' %}>Logout</a></li>
                 <li><a href={% url 'resources' %}>Resources</a></li>
-                <li><a href={% url 'open_source' %}>Open Source</a></li>
             {% endif %}
             </ul>
           </div>
