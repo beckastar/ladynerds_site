@@ -131,3 +131,12 @@ STATICFILES_DIRS = (
 
 MAILGUN_DOMAIN = os.environ.get('MAILGUN_DOMAIN')
 MAILGUN_PASSWORD = os.environ.get('MAILGUN_PASSWORD')
+
+
+# http://stackoverflow.com/questions/4909958/django-local-settings
+# By putting this here all settings in the local_settings.py file wil overrides the one in here.
+# do not commit local_settings.py file.
+try:
+    from local_settings import *
+except ImportError:
+    pass
