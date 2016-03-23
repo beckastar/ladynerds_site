@@ -3,16 +3,16 @@
 LadyNerds are an organization comprised of people who graduated from the Hackbright Academy coding bootcamp.  There are roughly 300 of us working in a variety of roles within the tech industry, primarily in San Francisco, but also places like Seattle, Portland, and New York. 
 
 ## Table of Contents
-- [About the Site](/ladynerds_site#about-the-site)
-- [Tracking Progress](/ladynerds_site#tracking-progress)
-    - [Making an Issue](/ladynerds_site#making-an-issue)
-    - [Tags](/ladynerds_site#tags)
-    - [Suggested Workflow](/ladynerds_site#suggested-workflow)
-- [How To Contribute](/ladynerds_site#how-to-contribute)
-    - [Set Up a Local Repo](/ladynerds_site#set-up-a-local-repo)
-    - [Keep Repos in Sync](/ladynerds_site#keep-repos-in-sync)
-    - [Choose An Issue](/ladynerds_site#choose-an-issue)
-- [Tips and Tricks](/ladynerds_site#tips-and-tricks)
+- [About the Site](#about-the-site)
+- [Tracking Progress](#tracking-progress)
+    - [Making an Issue](#making-an-issue)
+    - [Tags](#tags)
+    - [Suggested Workflow](#suggested-workflow)
+- [How To Contribute](#how-to-contribute)
+    - [Set Up a Local Repo](#set-up-a-local-repo)
+    - [Keep Repos in Sync](#keep-repos-in-sync)
+    - [Choose An Issue](#choose-an-issue)
+- [Tips and Tricks](#tips-and-tricks)
 
 ## About the Site
 This CRUD webapp is an ongoing collective project! Any LadyNerd is welcome to contribute. There are instructions for getting started below. Check out the 'issues' tab for things that need to be done.
