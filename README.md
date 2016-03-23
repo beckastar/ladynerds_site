@@ -87,10 +87,10 @@ You'll have to submit pull-requests from **your** github repo, rather than the o
 
 Before you can make a pull request you need to:
 - Pull and merge any updates from the orginal "upstream" repo:
-  *[How to get changes from the original repo](https://help.github.com/articles/syncing-a-fork/)
-  *(substitute "mvp" for "master" if your updates are in that branch)
+    - [How to get changes from the original repo](https://help.github.com/articles/syncing-a-fork/)
+    - (substitute "mvp" for "master" if your updates are in that branch)
 - Push your merged changes up to your remote "origin" repo
-  *[How to update YOUR github repo with your sync'ed and merged local changes](https://help.github.com/articles/pushing-to-a-remote/)
+    - [How to update YOUR github repo with your sync'ed and merged local changes](https://help.github.com/articles/pushing-to-a-remote/)
 
 Keep in mind that if you've made changes to both mvp and master, you will need to go through the fetch, merge, and push steps of this process in both branches.
 
@@ -162,13 +162,13 @@ Check out the 'issues' tab (at the top of this repo) to find something you'd lik
 ## Tips and Tricks:
 
 - Check out the 'issues' for features that we'd like to work on, or are already working on.
-  *IMPORTANT: Before you start working on your local repo, make a local branch for the issue
+    - IMPORTANT: Before you start working on your local repo, make a local branch for the issue
     you are working on.  Do all of your work for that issue on that branch.  This will make pull
     requests less confusing for everyone later on.
 - If you do some work, submit a pull request/push up your branch and be sure to comment with whatever work you've done. 
 This will make it easier for other folks to help without duplicating code.
-  *If you keep working, keep pushing! The pull request will keep updated.
-  *Make sure your pull request is comparing your local `issue` branch to the the original repos `mvp` branch.
+    - If you keep working, keep pushing! The pull request will keep updated.
+    - Make sure your pull request is comparing your local `issue` branch to the the original repos `mvp` branch.
 - If you're a contributor, please get a code review before accepting your own pull requests :)
 
 The site currently has a black header with a black navbar, with neon green font. If you see something else, you're on the wrong branch. 
