@@ -14,8 +14,7 @@ from django.utils.decorators import method_decorator
 from django.views.generic.detail import SingleObjectMixin
 from django.contrib import messages
 from .forms import UserProfileForm, ContactForm
-from models import UserProfile 
-
+from models import User
 
 
 def index(request):
@@ -81,25 +80,15 @@ def login(request):
 
 @login_required
 def profile(request):
-    ## try and get the userprofile for the current profile
-    try:
-        my_user_profile = UserProfile.objects.get(user=request.user)
-    except UserProfile.DoesNotExist:
-        my_user_profile = UserProfile()
     ## if it does not exist, create a new one, and pass it into instance
-    form = UserProfileForm(instance=my_user_profile)
+    form = UserProfileForm(instance=request.user)
+    profile = request.user
     if request.method == 'POST':
         form = UserProfileForm(data=request.POST)
         print(form.data)
         if form.is_valid():
             print("valid")
-            userprofile = form.save(commit=False)
-            try:
-                userprofile.id = UserProfile.objects.get(user=request.user).id
-            except UserProfile.DoesNotExist:
-                pass
-            userprofile.user = request.user 
-            userprofile.save()
+            profile = form.save(commit=True)
         else:
             messages.error(request, form.errors)
             print("failed")
@@ -107,7 +96,7 @@ def profile(request):
 
 @login_required
 def ladynerds(request):
-    ladynerds = UserProfile.objects.all()
+    ladynerds = User.objects.all()
     context_dict = {'ladynerds':ladynerds}
     return render_to_response('ladynerds.html', RequestContext(request, context_dict))
 
