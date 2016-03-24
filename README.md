@@ -162,6 +162,7 @@ This is a screenshot of what you should see, currently (as of Feb 24, 2016), aft
 
 The site currently has a black header with a black navbar, with neon green font. If you see something else, you're on the wrong branch. 
 
+The documentation for switching to Postgres can be seen at this URL:  https://docs.google.com/document/d/1bBNODYnMo0-DIkD0hXp7gFRexDhmvqZvySEWi8hVE3w/edit
 
 Have fun!
 
