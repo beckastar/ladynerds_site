@@ -125,6 +125,10 @@ USE_L10N = True
 
 USE_TZ = True
 
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
 MAILGUN_DOMAIN = os.environ.get('MAILGUN_DOMAIN')
 MAILGUN_PASSWORD = os.environ.get('MAILGUN_PASSWORD')
 
