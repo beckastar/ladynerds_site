@@ -9,4 +9,4 @@ local_settings.py
 
 .idea/
 
-db.sqlite3
+*.sqlite3
