@@ -29,7 +29,6 @@ STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 # Extra places for collectstatic to find static files.
-print BASE_DIR
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
@@ -43,7 +42,6 @@ STATICFILES_FINDERS = (
 # TEMPLATE_DIRS = (
 #     os.path.join(os.path.dirname(__file__), 'templates/'),
 # )
-print TEMPLATE_DIRS
 
 
 # Quick-start development settings - unsuitable for production
