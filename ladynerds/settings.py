@@ -135,6 +135,23 @@ MAILGUN_DOMAIN = os.environ.get('MAILGUN_DOMAIN')
 MAILGUN_PASSWORD = os.environ.get('MAILGUN_PASSWORD')
 
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'beckastar@gmail.com'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False 
+EMAIL_PORT = 1025
+
+AUTH_USER_MODEL = 'ladynerds.user'
+
+DATABASES   = {
+    'default': {'ENGINE':'django.db.backends.postgresql_psycopg2',
+                'NAME': 'ladynerds',
+                'USER': 'hacker',
+                'PASSWORD' :'python'
+    }
+}
+
 # http://stackoverflow.com/questions/4909958/django-local-settings
 # By putting this here all settings in the local_settings.py file wil overrides the one in here.
 # do not commit local_settings.py file.
