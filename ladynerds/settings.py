@@ -29,6 +29,7 @@ STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 # Extra places for collectstatic to find static files.
+print BASE_DIR
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
