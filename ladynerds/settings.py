@@ -33,6 +33,11 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 
+STATICFILES_FINDERS = (
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+)
+
 
 # TEMPLATE_DIRS = (
 #     os.path.join(os.path.dirname(__file__), 'templates/'),
