@@ -22,12 +22,26 @@ TEMPLATE_DIRS = (
     os.path.join(SETTINGS_PATH, 'templates'),
 )
 
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.9/howto/static-files/
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
+
+STATICFILES_FINDERS = (
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+)
 
 
 # TEMPLATE_DIRS = (
 #     os.path.join(os.path.dirname(__file__), 'templates/'),
 # )
-print TEMPLATE_DIRS
 
 
 # Quick-start development settings - unsuitable for production
@@ -117,23 +131,11 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.8/howto/static-files/
-STATIC_URL = '/static/'
-print "look here:" + STATIC_URL
-
-# STATIC_ROOT = os.path.join(BASE_DIR, "static")
-
-
-STATICFILES_DIRS = (
-    os.path.join(SETTINGS_PATH, 'static'),
-)
-
 MAILGUN_DOMAIN = os.environ.get('MAILGUN_DOMAIN')
 MAILGUN_PASSWORD = os.environ.get('MAILGUN_PASSWORD')
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 DEFAULT_FROM_EMAIL = 'beckastar@gmail.com'
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
