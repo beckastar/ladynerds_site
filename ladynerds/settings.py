@@ -144,7 +144,7 @@ EMAIL_PORT = 1025
 
 AUTH_USER_MODEL = 'ladynerds.user'
 
-DATABASES   = {
+DATABASES = {
     'default': {'ENGINE':'django.db.backends.postgresql_psycopg2',
                 'NAME': 'ladynerds',
                 'USER': 'hacker',
