@@ -1,1 +1,1 @@
-web: gunicorn ladynerds.wsgi
+web: gunicorn ladynerds.wsgi --log-file -
