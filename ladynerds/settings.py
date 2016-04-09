@@ -104,18 +104,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'ladynerds.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/1.8/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
-
 LOGIN_REDIRECT_URL = "/profile"
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
@@ -145,10 +133,14 @@ EMAIL_PORT = 1025
 AUTH_USER_MODEL = 'ladynerds.user'
 
 DATABASES = {
-    'default': {'ENGINE':'django.db.backends.postgresql_psycopg2',
-                'NAME': 'ladynerds',
-                'USER': 'hacker',
-                'PASSWORD' :'python'
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'ladynerds',
+        'USER': 'hacker',
+        'PASSWORD': 'python',
+        'HOST': 'localhost',
+        'PORT': '',
+
     }
 }
 

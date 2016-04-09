@@ -66,7 +66,52 @@ $ pip install -r requirements.txt
 
 After you've installed Django:
 
+Setup your local Postgress DB
+
+install with brew
+```
+$ brew install postgresql
+
+```
+To have launchd start postgresql at login (After installing with Brew)
+
+```
+$ ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+$ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+```
+Then try to run Postgres
+```
+$ psql -h localhost
+psql (9.5.2)
+Type "help" for help.
+
+=#
+
+```
+I got an error when runing psql
+```
+psql: FATAL:  database "<user>" does not exist
+```
+So I had to run
+```
+$ createdb
+```
+Lets now create the user and the database.
+```
+=# CREATE USER hacker WITH PASSWORD 'python';
+CREATE ROLE
+=# CREATE DATABASE ladynerds OWNER hacker;
+CREATE DATABASE
+
+```
+Run DB migration
+```
+$ python manage.py migrate
+```
+Run servser
+```
 $ python manage.py runserver
+```
 
 And now you can view the site locally at http://localhost:8000/
 
