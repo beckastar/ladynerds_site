@@ -128,6 +128,28 @@ Before you can make a pull request, pull and merge any updates from the orginal 
 
 Keep in mind that if there are changes to both static and master, you will need to go through the fetch, merge, and push steps of this process in both branches
 
+
+## How to deploy to Heroku:
+Install Heroku toolbelt via Brew or from heroku https://devcenter.heroku.com/articles/getting-started-with-python#set-up
+
+**login to Heroku**
+```
+$ heroku login
+Enter your Heroku credentials.
+Email: python@example.com
+Password:
+...
+```
+**Connect your local repo to Heroku remote.**
+```
+$ heroku git:remote -a ladynerds
+```
+
+**To deploy to Heroku**
+```
+$ git push heroku <local_branch>:master
+```
+
 ## General Stuff to keep in mind:
 
 - Check out the 'issues' for features that we'd like to work on, or are already working on.
