@@ -14,7 +14,7 @@ def contact_us_email(contact_name, contact_email, form_content):
     msg = MIMEText(content.format(name=contact_name, email=contact_email, body=form_content))
     msg['Subject'] = "New contact form submission"
     msg['From']    = "postmaster@sandboxa1dc248e720743dc811f3c54fbfc4c75.mailgun.org"
-    msg['To']      = "ladynerdadmin@googlegroups.com"
+    msg['To']      = "ladynerdsadmin@googlegroups.com"
 
     s = smtplib.SMTP('smtp.mailgun.org', 587)
 
