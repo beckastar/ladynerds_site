@@ -48,10 +48,9 @@ header {
     padding: 0;
     margin: 0;
     top: 14%;
-    left: 0%;
+    left: 0;
     position: absolute;
     color: black;
-    left: 0%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -149,7 +148,6 @@ header {
 #main {
     height: 70%;
     /*background: #EC38F2;*/
-    padding-top-top: 50px solid #235B8C;
 
 }
 
