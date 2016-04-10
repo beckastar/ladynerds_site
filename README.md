@@ -108,6 +108,10 @@ Run DB migration
 ```
 $ python manage.py migrate
 ```
+Create the admin user
+```
+$ python manage.py createsuperuser
+```
 Run servser
 ```
 $ python manage.py runserver
