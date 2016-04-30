@@ -13,16 +13,18 @@ from django.contrib.admin.views.decorators import staff_member_required
 from django.utils.decorators import method_decorator
 from django.views.generic.detail import SingleObjectMixin
 from django.contrib import messages
-from forms import UserProfileForm, ContactForm
-from models import UserProfile 
+from .forms import UserProfileForm, ContactForm
+from helpers import email_helper
 
+from models import User
 
 
 def index(request):
 	return render_to_response('index.html', RequestContext(request))
 
+
 def contact(request):
-    form_class = ContactForm 
+    form_class = ContactForm
 
     if request.method == 'POST':
         form = form_class(data=request.POST)
@@ -31,23 +33,7 @@ def contact(request):
             contact_name = request.POST.get('contact_name','')
             contact_email = request.POST.get('contact_email', '')
             form_content = request.POST.get('content', '')
-
-            template = get_template('contact_template.txt')
-            context = Context({
-                'contact_name': contact_name,
-                'contact_email': contact_email,
-                'form_content': form_content,
-            })
-            content = template.render(context)
-
-            email = EmailMessage(
-                "New contact form submission",
-                content,
-                "LadyNerds" +'',
-                ['beckastar@gmail.com'],
-                headers = {'Reply-To': contact_email }
-            )
-            email.send()
+            email_helper.contact_us_email(contact_name, contact_email, form_content)
             return redirect('contact')
 
     return render(request, 'contact.html', {
@@ -81,19 +67,23 @@ def login(request):
 
 @login_required
 def profile(request):
-    form = UserProfileForm(request.POST)
+    ## if it does not exist, create a new one, and pass it into instance
+    form = UserProfileForm(instance=request.user)
+    profile = request.user
     if request.method == 'POST':
+        form = UserProfileForm(data=request.POST)
+        print(form.data)
         if form.is_valid():
-            userprofile = form.save(commit=False)
-            userprofile.user = request.user
-            userprofile.save()
+            print("valid")
+            profile = form.save(commit=True)
         else:
-            print(messages.error(request, "Error"))
-    return render(request, "profileform.html", RequestContext(request, {'form': form, 'profile': profile,}))
+            messages.error(request, form.errors)
+            print("failed")
+    return render(request, "profileform.html", RequestContext(request, {'form': form, 'profile': profile}))
 
 @login_required
 def ladynerds(request):
-    ladynerds = UserProfile.objects.all()
+    ladynerds = User.objects.all()
     context_dict = {'ladynerds':ladynerds}
     return render_to_response('ladynerds.html', RequestContext(request, context_dict))
 
