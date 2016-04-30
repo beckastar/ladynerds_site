@@ -20,7 +20,7 @@ from models import User
 
 
 def index(request):
-	return render_to_response('index.html', RequestContext(request))
+    return render_to_response('about.html', RequestContext(request))
 
 
 def contact(request):
