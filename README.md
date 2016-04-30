@@ -114,6 +114,56 @@ This is where we're currently working. It's rough, I know. See what branches you
 $ git branch
 * master
   static
+
+Setup your local Postgress DB
+
+install with brew
+```
+$ brew install postgresql
+
+```
+To have launchd start postgresql at login (After installing with Brew)
+
+```
+$ ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+$ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+```
+Then try to run Postgres
+```
+$ psql -h localhost
+psql (9.5.2)
+Type "help" for help.
+
+=#
+
+```
+I got an error when runing psql
+```
+psql: FATAL:  database "<user>" does not exist
+```
+So I had to run
+```
+$ createdb
+```
+Lets now create the user and the database.
+```
+=# CREATE USER hacker WITH PASSWORD 'python';
+CREATE ROLE
+=# CREATE DATABASE ladynerds OWNER hacker;
+CREATE DATABASE
+
+```
+Run DB migration
+```
+$ python manage.py migrate
+```
+Create the admin user
+```
+$ python manage.py createsuperuser
+```
+Run servser
+```
+$ python manage.py runserver
 ```
 
 *If you only see master, get the static branch from your online repo:
@@ -144,7 +194,32 @@ And now you can view the site locally at http://localhost:8000/
 Check out the 'issues' tab (at the top of this repo) to find something you'd like to work on. (Be sure to read [this section on issues](https://github.com/beckastar/ladynerds_site#tracking-progress) before diving in, so you know how it all works.)
 
 
+<<<<<<< HEAD
 ## Tips and Tricks:
+=======
+## How to deploy to Heroku:
+Install Heroku toolbelt via Brew or from heroku https://devcenter.heroku.com/articles/getting-started-with-python#set-up
+
+**login to Heroku**
+```
+$ heroku login
+Enter your Heroku credentials.
+Email: python@example.com
+Password:
+...
+```
+**Connect your local repo to Heroku remote.**
+```
+$ heroku git:remote -a ladynerds
+```
+
+**To deploy to Heroku**
+```
+$ git push heroku <local_branch>:master
+```
+
+## General Stuff to keep in mind:
+>>>>>>> d87e2d045a8142d127393c3abd1a3254a71dd10d
 
 - Check out the 'issues' for features that we'd like to work on, or are already working on.
     - IMPORTANT: Before you start working on your local repo, make a local branch for the issue

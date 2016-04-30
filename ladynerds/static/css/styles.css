@@ -7,7 +7,6 @@ html, body, .container {
 
 body {
     background-color: white;
-    overflow: hidden;
     /*old: #86AAAC;*/
 }
 
@@ -49,10 +48,9 @@ header {
     padding: 0;
     margin: 0;
     top: 14%;
-    left: 0%;
+    left: 0;
     position: absolute;
     color: black;
-    left: 0%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -150,7 +148,6 @@ header {
 #main {
     height: 70%;
     /*background: #EC38F2;*/
-    padding-top-top: 50px solid #235B8C;
 
 }
 
@@ -195,7 +192,7 @@ table {
 
 table th {
     padding: 2px;
-    background: rgb(237, 210, 229);  
+    background: rgb(237, 210, 229);
 }
 
 table td {
@@ -221,7 +218,7 @@ table td {
 .textbody {
     margin-left: 10%;
     margin-top: 2%;
-    margin-bottom: 2%
+    margin-bottom: 2%;
     margin-right: 8%;
     font-size: 23px;
 }
@@ -330,7 +327,7 @@ tr td label {
 
 .title {
     font-family: Verdana;
-    font-style: bold;
+    font-weight: bold;
     position: relative;
     padding-top: 1.5%;
     padding-bottom: 2%;

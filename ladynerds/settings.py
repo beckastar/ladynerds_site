@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+import dj_database_url
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -103,18 +104,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'ladynerds.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/1.8/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
-
 LOGIN_REDIRECT_URL = "/profile"
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
@@ -143,13 +132,34 @@ EMAIL_PORT = 1025
 
 AUTH_USER_MODEL = 'ladynerds.user'
 
-DATABASES = {
-    'default': {'ENGINE':'django.db.backends.postgresql_psycopg2',
-                'NAME': 'ladynerds',
-                'USER': 'hacker',
-                'PASSWORD' :'python'
+if os.environ.get('DJANGO_DEVELOPMENT') == "PROD":
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'ladynerds',
+            'USER': 'hacker',
+            'PASSWORD': 'python',
+            'HOST': 'localhost',
+            'PORT': '',
+
+        }
     }
-}
+
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+
+
+# Update database configuration with $DATABASE_URL for Heroku
+# https://devcenter.heroku.com/articles/django-app-configuration#database-configuration
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
+
 
 # http://stackoverflow.com/questions/4909958/django-local-settings
 # By putting this here all settings in the local_settings.py file wil overrides the one in here.
