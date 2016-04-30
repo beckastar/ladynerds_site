@@ -63,8 +63,8 @@ class User(AbstractUser):
 
     def __str__(self):
         return '%s %s %s %s %s %s %s %s %s %s %s %s %s %s %s' %(
-            self.username, self.picture, self.city,
-            self.email_address, self.twitter, self.company, self.past_companies, 
+            self.user, self.picture, self.city,
+            self.email_address, self.twitter, self.company, self.past_companies,
             self.languages, self.frameworks, self.year_graduated, self.season_graduated, 
             self.looking_for_job, self.position, self.position_other,
             self.date
