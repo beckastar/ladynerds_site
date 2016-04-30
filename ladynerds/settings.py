@@ -133,17 +133,28 @@ EMAIL_PORT = 1025
 
 AUTH_USER_MODEL = 'ladynerds.user'
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ladynerds',
-        'USER': 'hacker',
-        'PASSWORD': 'python',
-        'HOST': 'localhost',
-        'PORT': '',
+if os.environ.get('DJANGO_DEVELOPMENT') == "PROD":
 
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'ladynerds',
+            'USER': 'hacker',
+            'PASSWORD': 'python',
+            'HOST': 'localhost',
+            'PORT': '',
+
+        }
     }
-}
+
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+
 
 # Update database configuration with $DATABASE_URL for Heroku
 # https://devcenter.heroku.com/articles/django-app-configuration#database-configuration
