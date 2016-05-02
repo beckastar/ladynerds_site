@@ -6,6 +6,7 @@ ladynerds/*.pyc
 # Django stuff:
 *.log
 local_settings.py
+client_secret.json
 
 .idea/
 
