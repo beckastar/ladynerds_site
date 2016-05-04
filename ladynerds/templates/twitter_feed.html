@@ -2,11 +2,17 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1>TWEETIING!!!</h1>
-
-<!-- A new wideget! This includes tweets from people who have asked to be included-->
-<a class="twitter-timeline" href="https://twitter.com/search?q=%40beckastar%20OR%20%40michelleglauser%20OR%20%40kwugirl%20OR%20%40eleanorstrib%20OR%20%40benzobot%20OR%20%40pinkyswearing%20OR%20%40katrinamariehh%20OR%20%40taygrave%20OR%20%40sarahfo%20OR%20%40sienatime%20OR%20%40kkschick%20OR%20%40unicornalamode%20OR%20%40roo_harrigan%20OR%20%40Alex_andra_P%20OR%20%40laviniaclare%20OR%20%40kf%20OR%20%40_shiftseven%20OR%20%40jchayes%20OR%20%40Aluhrsaj" 
-data-widget-id="727264522386329600">Tweets by us!</a>
+<!-- This widget includes tweets BY people who asked to be included in the twitter feed -->
+<a class="twitter-timeline" href="https://twitter.com/laviniaclare/lists/website-twitter-feed" data-widget-id="727973971207987201">Tweets from us!</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<!-- This includes tweets ABOUT people who have asked to be included-->
+<!-- <a class="twitter-timeline" href="https://twitter.com/search?q=%40beckastar%20OR%20%40michelleglauser%20OR%20%40kwugirl%20OR%20%40eleanorstrib%20OR%20%40benzobot%20OR%20%40pinkyswearing%20OR%20%40katrinamariehh%20OR%20%40taygrave%20OR%20%40sarahfo%20OR%20%40sienatime%20OR%20%40kkschick%20OR%20%40unicornalamode%20OR%20%40roo_harrigan%20OR%20%40Alex_andra_P%20OR%20%40laviniaclare%20OR%20%40kf%20OR%20%40_shiftseven%20OR%20%40jchayes%20OR%20%40Aluhrsaj" 
+data-widget-id="727264522386329600">Tweets by us!</a> -->
+<script>
+// !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+
+
 
 {% endblock %}
