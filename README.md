@@ -150,14 +150,48 @@ $ git branch
 
 **Run the web server:**
 
-```sh
+Setup your local sequel lite DB
+
+Run DB migration
+```
+$ python manage.py migrate
+```
+Create the admin user
+```
+$ python manage.py createsuperuser
+```
+Run servser
+```
 $ python manage.py runserver
 ```
+
 And now you can view the site locally at http://localhost:8000/
 
 #### Choose an Issue:
 Check out the 'issues' tab (at the top of this repo) to find something you'd like to work on. (Be sure to read [this section on issues](https://github.com/beckastar/ladynerds_site#tracking-progress) before diving in, so you know how it all works.)
 
+
+
+## How to deploy to Heroku:
+Install Heroku toolbelt via Brew or from heroku https://devcenter.heroku.com/articles/getting-started-with-python#set-up
+
+**login to Heroku**
+```
+$ heroku login
+Enter your Heroku credentials.
+Email: python@example.com
+Password:
+...
+```
+**Connect your local repo to Heroku remote.**
+```
+$ heroku git:remote -a ladynerds
+```
+
+**To deploy to Heroku**
+```
+$ git push heroku <local_branch>:master
+```
 
 ## Tips and Tricks:
 

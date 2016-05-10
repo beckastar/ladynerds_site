@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Ladynerds Resources</h1>
+<p>
+Now that you are part of the alumni network you have access to several of our great resources.
+</p>
+
+<ul>
+  <li><a href="https://groups.google.com/forum/#!forum/lady-nerds" target="_blank">Google Group</a></li>
+  <li><a href="https://ladynerds.slack.com/" target="_blank">Slack Channel</a></li>
+  <ul>
+    <li>(To join the slack channel please email beckastarATgmailDOTcom)</li>
+  </ul>
+  <li><a href="https://drive.google.com/open?id=0B9wDEqjIvkR2fl9SazZfbDdJVE9FV3l3LUhva1Z5RDhqVnAwM0c5RE1sZmF5RXcwMm5hLW8" target="_blank">Organizational Documentation</a>, such as:</li>
+  <ul>
+    <li><a href="https://drive.google.com/open?id=1QPkjE6eA6QLkjoBWRwVLU1p2csd3midxMPZwTkGn2wg" target="_blank">Mission & Code of Conduct</a></li>
+    <li><a href="https://drive.google.com/open?id=0B9wDEqjIvkR2fmcwdzBzYVdraVlKZHhoRFA0VE9ZYnR6V0RhNXRFaHQtZ2dZcVhreFloOHc" target="_blank">Meeting Notes</a></li>
+    <li><a href="https://drive.google.com/open?id=1kKNhQHbq4KomdphqGrfInK75SXG8a033LlfraGqtxG0" target="_blank">Companies Hiring Engineers</a></li>
+  </ul>
+</ul>
+
+Open source resources:
+<ul>
+  <li><a href={% url 'open_source' %}>Open Source</a></li>
+
+{% endblock %}

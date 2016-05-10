@@ -1,6 +1,8 @@
 from django.db import models
+from django import forms
 from django.forms import ModelForm
-from django.contrib.auth.models import User
+from django.contrib.auth.models import AbstractUser
+
 
 Full_stack= "Full Stack"
 Back_end = "Back_end"
@@ -38,29 +40,37 @@ Positions = (
     (Other, "Other"),
     )
 
-class UserProfile(models.Model):
-    user = models.OneToOneField(User)
+
+
+
+class User(AbstractUser):
     picture = models.ImageField(upload_to='profile_images', blank=True)
-    city = models.CharField(max_length = 20)
-    email_address = models.CharField(max_length=40)
-    twitter = models.CharField(max_length=40)
-    company = models.CharField(max_length=40)
-    past_companies = models.CharField(max_length=50)
-    freelancer = models.BooleanField()
-    languages = models.CharField(max_length=40)
-    frameworks = models.CharField(max_length=40)
-    year_graduated = models.IntegerField()
-    season_graduated = models.CharField(max_length=20)
+    city = models.CharField(max_length = 20, null=True)
+    email_address = models.CharField(max_length=40, null=True)
+    twitter = models.CharField(max_length=40, null=True)
+    twitter = models.CharField(max_length=40, null=True)
+    company = models.CharField(max_length=40, null=True)
+    past_companies = models.CharField(max_length=50, null=True)
+    freelancer = models.BooleanField(default=False)
+    languages = models.CharField(max_length=40, null=True)
+    frameworks = models.CharField(max_length=40, null=True)
+    year_graduated = models.IntegerField(null=True)
+    season_graduated = models.CharField(max_length=20, null=True)
     looking_for_job = models.BooleanField(default = False)
-    position = models.CharField(max_length=20, choices=Positions)
-    position_other = models.CharField(max_length=20)
+    position = models.CharField(max_length=20, choices=Positions, null=True)
+    position_other = models.CharField(max_length=20, null=True)
     date = models.DateTimeField(auto_now_add=True, blank=True, null=True)
 
     def __str__(self):
         return '%s %s %s %s %s %s %s %s %s %s %s %s %s %s %s' %(
             self.user, self.picture, self.city,
-            self.email_address, self.twitter, self.company, self.past_companies, 
+            self.email_address, self.twitter, self.company, self.past_companies,
             self.languages, self.frameworks, self.year_graduated, self.season_graduated, 
             self.looking_for_job, self.position, self.position_other,
             self.date
             )
+
+class Link(models.Model):
+    url = models.CharField(max_length=200)
+    desc = models.CharField(max_length=500)
+    contrib = models.ForeignKey(User)

@@ -2,6 +2,7 @@
 {% load staticfiles %}
 <html lang="en">
 <head>
+    <title>Lady Nerds</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
@@ -14,23 +15,19 @@
             <span id="header">Header</span>
             <div id="container"> </div>
             <ul id="nav">
+            {% if not user.is_authenticated %}
                 <li><a href={% url 'django.contrib.auth.views.login' %}>Login</a></li>
-            {% if user.is_authenticated %}
-                <li><a href={% url 'logout' %}>Logout</a></li>
-                <li><a href={% url 'profile' %}>Edit Your Profile</a>
-                </li>
-                <li><a href="">Ladynerds</a></li>
-                <li><a href="">LN Calendar</a></li>
-                <li><a href="#">Slack</a>
-                </li>
-                </li>          
+                <li><a href={% url 'index' %}>About</a></li>
             {% endif %}
-              <li><a href={% url 'about' %}>About Ladynerds</a>
-              <li><a href="#">Resources</a>
-              </li>
-                <ul>
-                </ul> 
-              </li>
+                <li><a href={% url 'contact' %}>Contact Us</a></li>
+                <li><a href={% url 'code_of_conduct' %}>Code of Conduct</a></li>
+                <li><a href={% url 'twitter_feed' %}>Twitter</a></li>
+            {% if user.is_authenticated %}
+                <li><a href={% url 'profile' %}>Edit Profile</a></li>
+                <li><a href={% url 'ladynerds' %}>Ladynerds</a></li>
+                <li><a href={% url 'logout' %}>Logout</a></li>
+                <li><a href={% url 'resources' %}>Resources</a></li>
+            {% endif %}
             </ul>
           </div>
         </div>
