@@ -23,6 +23,12 @@ def index(request):
 	return render_to_response('index.html', RequestContext(request))
 
 
+def success(request):
+	return render_to_response('success.html', RequestContext(request))
+
+
+
+
 def contact(request):
     form_class = ContactForm
 
